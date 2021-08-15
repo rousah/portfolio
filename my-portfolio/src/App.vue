@@ -1,15 +1,13 @@
 <template>
   <div id="app">
     <Navbar :show="showNav" />
-    <section class="section">
-      <Hero />
-      <div class="container">
-        <about-me />
-        <my-projects />
-        <my-skills />
-        <HelloWorld :msg="message" />
-      </div>
-    </section>
+    <Hero />
+    <div class="container is-max-desktop">
+      <about-me />
+      <my-projects />
+      <my-skills />
+      <HelloWorld :msg="message" />
+    </div>
   </div>
 </template>
 
