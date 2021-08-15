@@ -1,4 +1,9 @@
 // Customizations Here
+$primary: #ECB410;
+$link-hover: #C15604;
+$link-focus: $link-hover;
+$navbar-item-hover-color: $link-hover;
+$navbar-item-hover-background-color: none;
 
 // Bulma Import
 @import '~bulma';

@@ -28,7 +28,7 @@
     </div>
     <div class="navbar-menu" v-bind:class="{ 'is-active': showNav }">
       <div class="navbar-end">
-        <a class="navbar-item"> About me </a>
+        <a class="navbar-item" href="#about-me"> About me </a>
         <a class="navbar-item"> My projects </a>
         <a class="navbar-item"> My skills </a>
         <a class="navbar-item"> Contact me </a>
@@ -59,4 +59,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.navbar-burger:hover {
+    background-color: transparent;
+}
 </style>
