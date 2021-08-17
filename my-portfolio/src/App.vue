@@ -6,6 +6,7 @@
       <about-me />
       <my-projects />
       <my-skills />
+      <contact-me />
     </div>
   </div>
 </template>
@@ -16,6 +17,7 @@ import Hero from "./components/Hero.vue";
 import AboutMe from "./components/AboutMe.vue";
 import MyProjects from "./components/MyProjects.vue";
 import MySkills from "./components/MySkills.vue";
+import ContactMe from "./components/ContactMe.vue";
 
 export default {
   name: "App",
@@ -25,6 +27,7 @@ export default {
     AboutMe,
     MyProjects,
     MySkills,
+    ContactMe,
   },
   data() {
     return {

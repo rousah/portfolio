@@ -46,6 +46,15 @@
         :projectInfo="project"
       />
     </div>
+    <h1 class="subtitle mt-5">
+      Skills I've learned:
+      <span
+        class="tag is-rounded"
+        v-for="(tech, index) in getAllTechnologies()"
+        :key="index"
+        >{{ tech }}</span
+      >
+    </h1>
   </section>
 </template>
 
@@ -57,7 +66,7 @@ var projects = [
     title: "AUCO",
     description: "short description auco",
     photo: "xxxxx",
-    technologies: ["HTML5", "JavaScript", "CSS", "React"],
+    technologies: ["HTML5", "HTML5", "JavaScript", "CSS", "React"],
     types: ["web", "game"],
   },
   {
@@ -67,7 +76,7 @@ var projects = [
     technologies: ["Unity", "3DsMax"],
     types: ["game"],
   },
-    {
+  {
     title: "Wecycle",
     description: "Recycling app",
     photo: "xxxxx",
@@ -109,12 +118,27 @@ export default {
       }
       return true;
     },
+    getAllTechnologies() {
+      var techs = [];
+      // Check all projects
+      this.projects.forEach((project) => {
+        // Add all technologies of each project
+        project.technologies.forEach((tech) => {
+          techs.push(tech);
+        });
+      });
+      // Convert to set to remove duplicates
+      return [...new Set(techs)];
+    },
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+.tag {
+  margin-right: 0.5rem;
+}
 @media only screen and (min-width: 1024px) {
   .level {
     margin-right: 15%;

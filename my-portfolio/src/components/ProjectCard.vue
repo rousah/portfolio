@@ -32,7 +32,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .tag {
-  margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
 </style>
