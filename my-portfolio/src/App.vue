@@ -6,13 +6,11 @@
       <about-me />
       <my-projects />
       <my-skills />
-      <HelloWorld :msg="message" />
     </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import AboutMe from "./components/AboutMe.vue";
@@ -22,7 +20,6 @@ import MySkills from "./components/MySkills.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
     Navbar,
     Hero,
     AboutMe,
@@ -31,7 +28,6 @@ export default {
   },
   data() {
     return {
-      message: "Hello world",
       showNav: false,
     };
   },
