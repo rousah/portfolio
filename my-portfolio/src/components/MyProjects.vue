@@ -16,50 +16,38 @@
       </p>
     </nav>
     <div class="tile is-ancestor">
-      <div class="tile is-parent is-4">
-        <div class="tile card is-child">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt="Placeholder image"
-              />
-            </figure>
-          </div>
-          <div class="card-content">
-            <p class="title is-4">AUCO</p>
-            <div class="pills mb-2">
-              <span class="tag is-rounded">HTML5</span>
-              <span class="tag is-rounded">JavaScript</span>
-            </div>
-            <p>Description</p>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-parent is-4">
-        <div class="tile box is-child">
-          <p class="title">AUCO</p>
-        </div>
-      </div>
+      <ProjectCard :projectInfo="projectDemo" />
     </div>
   </section>
 </template>
 
 <script>
+import ProjectCard from "./ProjectCard";
+
+var projectDemo = {
+  title: "AUCO",
+  description: "short description auco",
+  photo: 'xxxxx',
+  technologies: ['HTML5', 'JavaScript', 'CSS', 'React'],
+  types: ['web', 'game'] 
+};
+
 export default {
   name: "MyProjects",
   props: {},
+  components: {
+    ProjectCard,
+  },
+  data() {
+    return {
+      projectDemo
+    }
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.box {
-  background-color: teal;
-}
-.tag {
-  margin-right: 0.5rem;
-}
 @media only screen and (min-width: 1024px) {
   .level {
     margin-right: 15%;
