@@ -4,6 +4,7 @@ $link-hover: #C15604;
 $link-focus: $link-hover;
 $navbar-item-hover-color: $link-hover;
 $navbar-item-hover-background-color: none;
+$button-focus-box-shadow-size: 0px;
 
 // Bulma Import
 @import '~bulma';
