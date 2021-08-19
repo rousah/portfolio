@@ -51,7 +51,7 @@
         Skills I've learned:
         <div>
           <span
-            class="tag is-rounded is-family-monospace"
+            class="tag is-rounded is-family-monospace mb-2"
             v-for="(tech, index) in getAllTechnologies()"
             :key="index"
           >

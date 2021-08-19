@@ -1,6 +1,9 @@
 <template>
   <div class="tile is-parent is-4">
-    <div class="tile card is-child is-flex is-clickable is-flex-direction-column" @click="toggleModal">
+    <div
+      class="tile card is-child is-flex is-clickable is-flex-direction-column"
+      @click="toggleModal"
+    >
       <div class="card-image">
         <figure class="image is-4by3">
           <img
@@ -64,6 +67,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: -webkit-fill-available;
+}
+@media only screen and (min-width: 1024px) {
+  .card-content {
+    height: -webkit-fill-available;
+  }
 }
 </style>
