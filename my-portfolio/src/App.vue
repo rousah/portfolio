@@ -5,7 +5,7 @@
     <div class="container is-max-desktop">
       <about-me />
       <my-projects />
-      <my-skills />
+     <!-- <my-skills /> -->
       <contact-me />
     </div>
   </div>
@@ -16,7 +16,7 @@ import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import AboutMe from "./components/AboutMe.vue";
 import MyProjects from "./components/MyProjects.vue";
-import MySkills from "./components/MySkills.vue";
+/*import MySkills from "./components/MySkills.vue"; */
 import ContactMe from "./components/ContactMe.vue";
 
 export default {
@@ -26,7 +26,7 @@ export default {
     Hero,
     AboutMe,
     MyProjects,
-    MySkills,
+   // MySkills,
     ContactMe,
   },
   data() {
