@@ -16,7 +16,6 @@ Vue.config.productionTip = false
 let app = new Vue({
   render: h => h(App),
   components: { App },
-  data: {hello: "ok"}
 })
 
 app.$mount('#app')
