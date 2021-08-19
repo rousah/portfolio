@@ -30,7 +30,7 @@
       <div class="navbar-end">
         <a class="navbar-item" href="#about-me"> About me </a>
         <a class="navbar-item" href="#projects"> My projects </a>
-        <a class="navbar-item" href="#skills"> My skills </a>
+    <!--   <a class="navbar-item" href="#skills"> My skills </a> -->
         <a class="navbar-item" href="#contact"> Contact me </a>
         <div class="navbar-item">
           <div class="buttons">
