@@ -2,7 +2,7 @@
   <section class="hero is-medium has-background-primary">
     <div class="hero-body">
       <p class="title" style="color: white !important">Welcome!</p>
-      <p class="subtitle" style="color: white !important">My name is Rosa. Take a look at the thing's I've worked on :)</p>
+      <p class="subtitle" style="color: white !important">My name is Rosa. Take a look at the things I've worked on :)</p>
     </div>
   </section>
 </template>
