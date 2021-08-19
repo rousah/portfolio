@@ -1,6 +1,6 @@
 <template>
   <div class="tile is-parent is-4">
-    <div class="tile card is-child">
+    <div class="tile card is-child" @click="toggleModal">
       <div class="card-image">
         <figure class="image is-4by3">
           <img
@@ -10,21 +10,41 @@
         </figure>
       </div>
       <div class="card-content">
-        <p class="title is-4">{{projectInfo.title}}</p>
+        <p class="title is-4">{{ projectInfo.title }}</p>
         <div class="pills mb-2">
-          <span class="tag is-rounded" v-for="(tech, index) in projectInfo.technologies" :key="index">{{tech}}</span>
+          <span
+            class="tag is-rounded"
+            v-for="(tech, index) in projectInfo.technologies"
+            :key="index"
+            >{{ tech }}</span
+          >
         </div>
-        <p>{{projectInfo.description}}</p>
+        <p>{{ projectInfo.description }}</p>
       </div>
     </div>
+    <ProjectModal :isActive="isOpen" v-bind="$props" :toggleMe="toggleModal"/>
   </div>
 </template>
 
 <script>
+import ProjectModal from "./ProjectModal.vue";
 export default {
   name: "ProjectCard",
   props: {
-      projectInfo: Object
+    projectInfo: Object,
+  },
+  components: {
+    ProjectModal,
+  },
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  methods: {
+    toggleModal() {
+      this.isOpen = !this.isOpen;
+    },
   },
 };
 </script>
