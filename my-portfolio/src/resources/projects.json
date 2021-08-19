@@ -1,0 +1,100 @@
+[
+    {
+        "title": "AUCO",
+        "description": "AUCO is a gamified online tool made with React that focuses on helping primary and middle school teachers to fight against bullying, in terms of detection and mitigation, and offering an open space where the students can communicate their worries to their teachers. It is part of an ongoing investigation in collaboration with the UPV, UV and Florida Universitaria.",
+        "shortDescription": "Gamified online tool made with React.",
+        "photo": "xxxxx",
+        "link": "http://auco.gti-ia.upv.es",
+        "repository": "https://github.com/rousah/AUCO",
+        "technologies": [
+            "JavaScript",
+            "React",
+            "MongoDB",
+            "Express",
+            "NodeJS"
+        ],
+        "types": [
+            "web",
+            "game"
+        ],
+        "year": "2021"
+    },
+    {
+        "title": "Lost Scout",
+        "description": "Lost Scout is a puzzle based computer video game made with Unity (C#), it has 3D modelled components and the main goal of the game is to help the little scout Finn find his way back to camp.",
+        "shortDescription": "Puzzle based computer video game made with Unity3D.",
+        "photo": "xxxxx",
+        "link": "",
+        "repository": "https://gitlab.com/real-delusion/lost-scout",
+        "technologies": [
+            "Unity",
+            "3DsMax",
+            "C#"
+        ],
+        "types": [
+            "game"
+        ],
+        "year": "2019"
+    },
+    {
+        "title": "Wecycle",
+        "description": "Wecycle is a mobile application, currently only available for Android, that helps find the nearest recycling spots to make it more convenient and fast to recycle. Made with Java in Android Stuido. Currently it's only available in Spain (DEMO).",
+        "shortDescription": "Android app that helps find the nearest recycling spots on a map.",
+        "photo": "xxxxx",
+        "link": "",
+        "repository": "https://github.com/Teasine",
+        "technologies": [
+            "Android Studio",
+            "Java",
+            "NodeJS",
+            "JavaScript",
+            "SQL",
+            "Express"
+        ],
+        "types": [
+            "app"
+        ],
+        "year": "2020"
+    },
+    {
+        "title": "Smart Scale and House",
+        "description": "IOT project: it consists of an intelligent house with sensors for the elderly to keep track of their health and monitor themselves using an Android app and a smart scale, thanks to Arduino.",
+        "shortDescription": "IOT house and app for the elderly to keep track of their health.",
+        "photo": "xxxxx",
+        "repository": "https://github.com/rousah/Bascula-grupo-2",
+        "technologies": [
+            "Android Studio",
+            "Java",
+            "Arduino",
+            "C++",
+            "Firebase"
+        ],
+        "types": [
+            "app",
+            "IOT"
+        ],
+        "year": "2018"
+    },
+    {
+        "title": "Poluzone",
+        "description": "Poluzone consists of an Android app and website to keep track of the pollution in the area. The app connects to an air pollution sensor with Bluetooth and shows realtime pollution information on a map, that is also available on the website.",
+        "shortDescription": "Pollution control app and website",
+        "photo": "xxxxx",
+        "repository": "https://github.com/Poluzone",
+        "technologies": [
+            "Android Studio",
+            "Java",
+            "Arduino",
+            "C++",
+            "HTML5",
+            "NodeJS",
+            "Express",
+            "Bootstrap"
+        ],
+        "types": [
+            "app",
+            "web"
+        ],
+        "year": "2019"
+    }
+]
