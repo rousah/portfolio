@@ -7,7 +7,10 @@
         <button class="delete" aria-label="close" @click="toggleMe"></button>
       </header>
       <section class="modal-card-body">
-        {{projectInfo.description}}
+        <p class="image is-4by3">
+          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="" />
+        </p>
+        {{ projectInfo.description }}
       </section>
       <footer class="modal-card-foot">
         <button class="button" @click="toggleMe">Close</button>

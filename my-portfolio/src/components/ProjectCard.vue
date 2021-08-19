@@ -1,7 +1,7 @@
 <template>
   <div class="tile is-parent is-4">
-    <div class="tile card is-child" @click="toggleModal">
-      <div class="card-image">
+    <div class="tile card is-child is-flex is-flex-direction-column" @click="toggleModal">
+      <div class="card-image is-flex-grow-1">
         <figure class="image is-4by3">
           <img
             src="https://bulma.io/images/placeholders/1280x960.png"
@@ -9,20 +9,23 @@
           />
         </figure>
       </div>
-      <div class="card-content">
+      <div class="card-content is-flex-grow-1">
         <p class="title is-4">{{ projectInfo.title }}</p>
         <div class="pills mb-2">
           <span
-            class="tag is-rounded"
+            class="tag is-rounded is-family-monospace"
             v-for="(tech, index) in projectInfo.technologies"
             :key="index"
             >{{ tech }}</span
           >
         </div>
-        <p>{{ projectInfo.description }}</p>
+        <p>{{ projectInfo.shortDescription }}</p>
+        <p class="year is-size-7 has-text-weight-light is-family-monospace">
+          {{ projectInfo.year }}
+        </p>
       </div>
     </div>
-    <ProjectModal :isActive="isOpen" v-bind="$props" :toggleMe="toggleModal"/>
+    <ProjectModal :isActive="isOpen" v-bind="$props" :toggleMe="toggleModal" />
   </div>
 </template>
 
@@ -53,5 +56,13 @@ export default {
 <style scoped>
 .tag {
   margin-bottom: 0.5rem;
+}
+.year {
+  margin-top: auto;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 </style>

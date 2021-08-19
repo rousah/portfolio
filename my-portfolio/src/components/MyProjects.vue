@@ -49,7 +49,7 @@
     <h1 class="subtitle mt-5">
       Skills I've learned:
       <span
-        class="tag is-rounded"
+        class="tag is-rounded is-family-monospace"
         v-for="(tech, index) in getAllTechnologies()"
         :key="index"
         >{{ tech }}</span
@@ -65,23 +65,29 @@ var projects = [
   {
     title: "AUCO",
     description: "short description auco",
+    shortDescription: "short description auco",
     photo: "xxxxx",
     technologies: ["HTML5", "HTML5", "JavaScript", "CSS", "React"],
     types: ["web", "game"],
+    year: '2021'
   },
   {
     title: "Lost Scout",
     description: "short description scout",
+    shortDescription: "short description auco",
     photo: "xxxxx",
     technologies: ["Unity", "3DsMax"],
     types: ["game"],
+    year: '2021'
   },
   {
     title: "Wecycle",
     description: "Recycling app",
+    shortDescription: "short description auco",
     photo: "xxxxx",
     technologies: ["Android", "Java"],
     types: ["app"],
+    year: '2021'
   },
 ];
 
