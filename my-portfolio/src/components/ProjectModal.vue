@@ -1,7 +1,13 @@
 <template>
   <div class="modal" :class="{ 'is-active': isActive }">
-    <div class="modal-background"></div>
-    <div class="modal-card">
+    <div
+      class="modal-background"
+      :class="[isActive ? 'animate__fadeIn animate__faster' : 'animate__fadeOutDown', 'animate__animated']"
+    ></div>
+    <div
+      class="modal-card"
+      :class="[isActive ? 'animate__fadeInUp animate__faster' : 'animate__fadeOutDown', 'animate__animated']"
+    >
       <header class="modal-card-head">
         <p class="modal-card-title has-text-weight-bold">
           {{ projectInfo.title }}
@@ -22,7 +28,10 @@
             <font-awesome-icon :icon="['fab', 'github']" />
           </a>
         </p>
-        <p v-if="projectInfo.link" class="is-flex is-justify-content-space-between">
+        <p
+          v-if="projectInfo.link"
+          class="is-flex is-justify-content-space-between"
+        >
           <span>
             Available here:
             <a
@@ -40,6 +49,8 @@
 </template>
 
 <script>
+import "animate.css";
+
 export default {
   name: "ProjectModal",
   props: {
