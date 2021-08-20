@@ -3,7 +3,7 @@
     id="contact"
     class="section is-medium has-background-primary-light mb-6"
   >
-    <h1 class="title">Contact me</h1>
+    <Title title="Contact me" />
     <div class="is-flex is-align-items-center is-flex-direction-column">
       <div>
         Don't be shy and send me an e-mail:
@@ -31,9 +31,13 @@
 </template>
 
 <script>
+import Title from "./Title.vue";
 export default {
   name: "ContactMe",
   props: {},
+  components: {
+    Title,
+  },
 };
 </script>
 
