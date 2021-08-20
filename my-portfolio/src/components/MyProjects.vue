@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="section is-medium">
-    <h1 class="title">My projects</h1>
+    <h1 class="title" ref="title">My projects</h1>
     <div class="projects-container">
       <nav class="level is-mobile container">
         <p class="level-item has-text-centered">
@@ -113,6 +113,26 @@ export default {
       return [...new Set(techs)];
     },
   },
+  mounted: function () {
+    this.$nextTick(function () {
+      // Code that will run only after the
+      // entire view has been rendered
+      const section = this.$refs["title"]
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const title = entry.target;
+
+          if (entry.isIntersecting) {
+            title.classList.add("animate__fadeInUp", "animate__animated");
+            return; // if we added the class, exit the function
+          } 
+        });
+      });
+
+      observer.observe(section);
+    });
+  },
 };
 </script>
 
@@ -122,11 +142,6 @@ export default {
   margin-right: 0.5rem;
 }
 
-.projects-container {
-  /*  border: 1px dashed #fff1ca;
-  border-radius: 8px;
-  padding: 2rem; */
-}
 @media only screen and (min-width: 1024px) {
   .level {
     margin-right: 15%;
