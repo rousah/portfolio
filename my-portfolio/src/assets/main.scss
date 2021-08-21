@@ -1,7 +1,9 @@
 // Customizations Here
 $primary: #ECB410;
 $primary-invert: #ffffff;
-$link-hover: #C15604;
+$info: #797920;
+$link: #C15604;
+$link-hover: #797920;
 $link-focus: $link-hover;
 $navbar-item-hover-color: $link-hover;
 $navbar-item-hover-background-color: none;
@@ -9,3 +11,4 @@ $button-focus-box-shadow-size: 0px;
 
 // Bulma Import
 @import '~bulma';
+@import '~bulma-ribbon/src/sass';
