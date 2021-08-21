@@ -38,8 +38,14 @@
               class="button is-primary"
               :href="`assets/CV_rosa_van_der_heide_english.pdf`"
               download
-              ><strong> Download CV </strong></a
             >
+              <span class="icon-text">
+                <span class="icon"
+                  ><font-awesome-icon :icon="['fas', 'file-download']"
+                /></span>
+                <strong> Download CV </strong>
+              </span>
+            </a>
           </div>
         </div>
       </div>

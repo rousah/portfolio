@@ -16,22 +16,30 @@
         <a
           href="https://www.linkedin.com/in/rousah/"
           class="icon is-size-3 m-3 has-text-primary"
+          target="_blank"
         >
           <font-awesome-icon :icon="['fab', 'linkedin']" />
         </a>
         <a
           href="https://github.com/rousah"
           class="icon is-size-3 m-3 has-text-primary"
+          target="_blank"
         >
           <font-awesome-icon :icon="['fab', 'github-square']" />
         </a>
       </div>
       <a
-        class="button is-link is-light"
+        class="button is-info"
         :href="`assets/CV_rosa_van_der_heide_english.pdf`"
         download
-        ><strong> Download CV </strong></a
       >
+        <span class="icon-text">
+          <span class="icon"
+            ><font-awesome-icon :icon="['fas', 'file-download']"
+          /></span>
+          <strong> Download CV </strong>
+        </span>
+      </a>
     </div>
   </section>
 </template>
