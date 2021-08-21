@@ -26,6 +26,12 @@
           <font-awesome-icon :icon="['fab', 'github-square']" />
         </a>
       </div>
+      <a
+        class="button is-link is-light"
+        :href="`assets/CV_rosa_van_der_heide_english.pdf`"
+        download
+        ><strong> Download CV </strong></a
+      >
     </div>
   </section>
 </template>

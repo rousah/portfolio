@@ -30,11 +30,16 @@
       <div class="navbar-end">
         <a class="navbar-item" href="#about-me"> About me </a>
         <a class="navbar-item" href="#projects"> My projects </a>
-    <!--   <a class="navbar-item" href="#skills"> My skills </a> -->
+        <!--   <a class="navbar-item" href="#skills"> My skills </a> -->
         <a class="navbar-item" href="#contact"> Contact me </a>
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-primary"><strong> Download CV </strong></a>
+            <a
+              class="button is-primary"
+              :href="`assets/CV_rosa_van_der_heide_english.pdf`"
+              download
+              ><strong> Download CV </strong></a
+            >
           </div>
         </div>
       </div>
@@ -52,6 +57,7 @@ export default {
     return {
       // Computed property based on show value, to not mutate the prop
       showNav: this.show,
+      publicPath: process.env.BASE_URL,
     };
   },
 };
@@ -60,6 +66,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .navbar-burger:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 </style>
