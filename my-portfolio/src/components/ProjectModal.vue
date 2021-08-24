@@ -2,11 +2,17 @@
   <div class="modal" :class="{ 'is-active': isActive }">
     <div
       class="modal-background"
-      :class="[isActive ? 'animate__fadeIn animate__faster' : 'animate__fadeOutDown', 'animate__animated']"
+      :class="[
+        isActive ? 'animate__fadeIn animate__faster' : 'animate__fadeOutDown',
+        'animate__animated',
+      ]"
     ></div>
     <div
       class="modal-card"
-      :class="[isActive ? 'animate__fadeInUp animate__faster' : 'animate__fadeOutDown', 'animate__animated']"
+      :class="[
+        isActive ? 'animate__fadeInUp animate__faster' : 'animate__fadeOutDown',
+        'animate__animated',
+      ]"
     >
       <header class="modal-card-head">
         <p class="modal-card-title has-text-weight-bold">
@@ -15,34 +21,53 @@
         <button class="delete" aria-label="close" @click="toggleMe"></button>
       </header>
       <section class="modal-card-body">
-        <p class="image is-4by3">
-          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="" />
-        </p>
-        <p class="mt-3">
+        <div class="image-container container">
+          <p class="image is-4by3">
+            <img
+              src="https://bulma.io/images/placeholders/1280x960.png"
+              alt=""
+            />
+          </p>
+        </div>
+        <h5 class="title is-5 mt-3 mb-2">Description</h5>
+        <p>
           {{ projectInfo.description }}
-          <a
-            :href="projectInfo.repository"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <font-awesome-icon :icon="['fab', 'github']" />
-          </a>
         </p>
-        <p
-          v-if="projectInfo.link"
-          class="is-flex is-justify-content-space-between"
-        >
-          <span>
-            Available here:
-            <a
-              :href="projectInfo.link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >{{ projectInfo.link }}
-            </a>
+        <h5 class="title is-5 mt-3 mb-2">Technologies and languages</h5>
+        <div class="pills mb-1">
+          <span
+            class="tag is-rounded is-family-monospace"
+            v-for="(tech, index) in projectInfo.technologies"
+            :key="index"
+            >{{ tech }}
           </span>
-          <span class="is-family-monospace">{{ projectInfo.year }}</span>
-        </p>
+        </div>
+        <div>
+          <h5 class="title is-5 mt-3 mb-2">Links</h5>
+          <div>
+            <span v-if="projectInfo.link">
+              Available here:
+              <a
+                :href="projectInfo.link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ projectInfo.link }}
+              </a>
+            </span>
+            <div>
+              Repository:
+              <a
+                :href="projectInfo.repository"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+                <font-awesome-icon :icon="['fab', 'github']" />
+              </a>
+            </div>
+          </div>
+          <div class="is-family-monospace mt-3 is-flex is-justify-content-flex-end">{{ projectInfo.year }}</div>
+        </div>
       </section>
     </div>
   </div>
@@ -63,4 +88,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.image-container {
+  width: 50%;
+}
 </style>
