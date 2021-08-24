@@ -3,7 +3,7 @@
         "title": "AUCO",
         "description": "AUCO is a gamified online tool made with React that focuses on helping primary and middle school teachers to fight against bullying, in terms of detection and mitigation, and offering an open space where the students can communicate their worries to their teachers. It is part of an ongoing investigation in collaboration with the UPV, UV and Florida Universitaria.",
         "shortDescription": "Gamified online tool made with React.",
-        "photo": "xxxxx",
+        "photo": "auco.png",
         "link": "http://auco.gti-ia.upv.es",
         "repository": "https://github.com/rousah/AUCO",
         "technologies": [
@@ -17,7 +17,8 @@
             "web",
             "game"
         ],
-        "year": "2021"
+        "year": "2021",
+        "imageCredits": "<a href='https://www.freepik.com/psd/background'>Background psd created by rawpixel.com - www.freepik.com</a>"
     },
     {
         "title": "Lost Scout",

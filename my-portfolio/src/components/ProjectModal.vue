@@ -21,13 +21,18 @@
         <button class="delete" aria-label="close" @click="toggleMe"></button>
       </header>
       <section class="modal-card-body">
-        <div class="image-container container">
+        <div class="image-container container is-size-7 has-text-centered">
           <p class="image is-4by3">
             <img
-              src="https://bulma.io/images/placeholders/1280x960.png"
-              alt=""
+              :src="require('../assets/images/' + projectInfo.photo)"
+              :alt="'Image of ' + projectInfo.title"
             />
           </p>
+          <span
+            class="credits"
+            v-if="projectInfo.imageCredits != null"
+            v-html="projectInfo.imageCredits"
+          />
         </div>
         <h5 class="title is-5 mt-3 mb-2">Description</h5>
         <p>
@@ -66,7 +71,11 @@
               </a>
             </div>
           </div>
-          <div class="is-family-monospace mt-3 is-flex is-justify-content-flex-end">{{ projectInfo.year }}</div>
+          <div
+            class="is-family-monospace mt-3 is-flex is-justify-content-flex-end"
+          >
+            {{ projectInfo.year }}
+          </div>
         </div>
       </section>
     </div>
@@ -89,6 +98,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .image-container {
-  width: 50%;
+  width: 70%;
 }
 </style>

@@ -126,6 +126,14 @@ export default {
   margin-right: 0.5rem;
 }
 
+img {
+image-rendering: -moz-crisp-edges; /* Firefox */
+image-rendering: -o-crisp-edges; /* Opera */
+image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
 @media only screen and (min-width: 1024px) {
   .level {
     margin-right: 15%;
