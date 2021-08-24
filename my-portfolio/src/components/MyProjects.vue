@@ -83,7 +83,7 @@ export default {
       filterValue: all,
       filteredProjects: projects,
       titleContent:
-        "<h1 class='title has-ribbon' ref='title'>My Projects<div class='ribbon is-light'>Available at my <a href='https://github.com/rousah' target='_blank'>GitHub</a></div></h1>",
+        "<h1 class='title has-ribbon' ref='title'>My Projects<div class='ribbon is-hidden-mobile is-light'>Available at my <a href='https://github.com/rousah' target='_blank'>GitHub</a></div></h1>",
     };
   },
   methods: {
