@@ -48,8 +48,8 @@
         />
       </div>
       <h1 class="subtitle mt-5">
-        Skills I've learned:
-        <div>
+        Skills I've learned working on these projects:
+        <div class="mt-2">
           <span
             class="tag is-rounded is-family-monospace mb-2"
             v-for="(tech, index) in getAllTechnologies()"
