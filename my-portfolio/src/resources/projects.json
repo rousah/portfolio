@@ -18,14 +18,14 @@
             "game"
         ],
         "year": "2021",
-        "imageCredits": "<a href='https://www.freepik.com/psd/background'>Background psd created by rawpixel.com - www.freepik.com</a>"
+        "imageCredits": "<a href='https://www.freepik.com/psd/background' target='_blank'>Background psd created by rawpixel.com - www.freepik.com</a>"
     },
     {
         "title": "Lost Scout",
         "description": "Lost Scout is a puzzle based computer video game made with Unity (C#), it has 3D modelled components and the main goal of the game is to help the little scout Finn find his way back to camp.",
         "shortDescription": "Puzzle based computer video game made with Unity3D.",
-        "photo": "xxxxx",
-        "link": "",
+        "photo": "lostscout.png",
+        "link": "https://do-videogames.webs.upv.es/juegos/lost-scout/",
         "repository": "https://gitlab.com/real-delusion/lost-scout",
         "technologies": [
             "Unity",
@@ -35,7 +35,8 @@
         "types": [
             "game"
         ],
-        "year": "2019"
+        "year": "2019",
+        "imageCredits": "Mockup image by <a href='rawpixel.com' target='_blank'>rawpixel.com</a>"
     },
     {
         "title": "Wecycle",
