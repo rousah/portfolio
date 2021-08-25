@@ -17,7 +17,7 @@
             "web",
             "game"
         ],
-        "year": "2021",
+        "year": "2020-2021",
         "imageCredits": "<a href='https://www.freepik.com/psd/background' target='_blank'>Background psd created by rawpixel.com - www.freepik.com</a>"
     },
     {
@@ -40,10 +40,10 @@
     },
     {
         "title": "Wecycle",
-        "description": "Wecycle is a mobile application, currently only available for Android, that helps find the nearest recycling spots to make it more convenient and fast to recycle. Made with Java in Android Stuido. Currently it's only available in Spain (DEMO).",
+        "description": "Wecycle is a mobile application, currently only available for Android, that helps find the nearest recycling spots to make it more convenient and fast to recycle. Made with Java in Android Studio. Currently it's only available in Spain (DEMO).",
         "shortDescription": "Android app that helps find the nearest recycling spots on a map.",
-        "photo": "xxxxx",
-        "link": "",
+        "photo": "wecycle.png",
+        "link": "https://tinyurl.com/wecycleplaystore",
         "repository": "https://github.com/Teasine",
         "technologies": [
             "Android Studio",
@@ -56,13 +56,14 @@
         "types": [
             "app"
         ],
-        "year": "2020"
+        "year": "2019-2020",
+        "imageCredits": "<a href='https://www.freepik.com/psd/mockup' target='_blank'>Mockup psd created by user17882893 - www.freepik.com</a>"
     },
     {
         "title": "Smart Scale and House",
         "description": "IOT project: it consists of an intelligent house with sensors for the elderly to keep track of their health and monitor themselves using an Android app and a smart scale, thanks to Arduino.",
         "shortDescription": "IOT house and app for the elderly to keep track of their health.",
-        "photo": "xxxxx",
+        "photo": "iot.png",
         "repository": "https://github.com/rousah/Bascula-grupo-2",
         "technologies": [
             "Android Studio",
@@ -75,7 +76,8 @@
             "app",
             "IOT"
         ],
-        "year": "2018"
+        "year": "2018",
+        "imageCredits": "<a href='https://www.freepik.com/psd/mockup'>Mockup psd created by rawpixel.com - www.freepik.com</a>"
     },
     {
         "title": "Poluzone",
@@ -97,6 +99,7 @@
             "app",
             "web"
         ],
-        "year": "2019"
+        "year": "2018-2019",
+        "imageCredits": "<a href='https://www.freepik.com/psd/computer' target='_blank'>Computer psd created by rawpixel.com - www.freepik.com</a>"
     }
 ]
