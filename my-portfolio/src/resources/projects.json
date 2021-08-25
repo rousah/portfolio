@@ -83,7 +83,7 @@
         "title": "Poluzone",
         "description": "Poluzone consists of an Android app and website to keep track of the pollution in the area. The app connects to an air pollution sensor with Bluetooth and shows realtime pollution information on a map, that is also available on the website.",
         "shortDescription": "Pollution control app and website",
-        "photo": "xxxxx",
+        "photo": "poluzone.png",
         "repository": "https://github.com/Poluzone",
         "technologies": [
             "Android Studio",
