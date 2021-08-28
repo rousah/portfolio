@@ -18,7 +18,7 @@
 <script>
 export default {
   name: "Hero",
-  props: {},
+  props: {}
 };
 </script>
 

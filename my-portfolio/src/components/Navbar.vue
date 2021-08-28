@@ -57,15 +57,15 @@
 export default {
   name: "Navbar",
   props: {
-    show: Boolean,
+    show: Boolean
   },
   data() {
     return {
       // Computed property based on show value, to not mutate the prop
       showNav: this.show,
-      publicPath: process.env.BASE_URL,
+      publicPath: process.env.BASE_URL
     };
-  },
+  }
 };
 </script>
 

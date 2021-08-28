@@ -4,14 +4,14 @@
       class="modal-background"
       :class="[
         isActive ? 'animate__fadeIn animate__faster' : 'animate__fadeOutDown',
-        'animate__animated',
+        'animate__animated'
       ]"
     ></div>
     <div
       class="modal-card"
       :class="[
         isActive ? 'animate__fadeInUp animate__faster' : 'animate__fadeOutDown',
-        'animate__animated',
+        'animate__animated'
       ]"
     >
       <header class="modal-card-head">
@@ -90,8 +90,8 @@ export default {
   props: {
     projectInfo: Object,
     isActive: Boolean,
-    toggleMe: Function,
-  },
+    toggleMe: Function
+  }
 };
 </script>
 

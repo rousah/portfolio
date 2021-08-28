@@ -75,7 +75,7 @@ export default {
   props: {},
   components: {
     ProjectCard,
-    Title,
+    Title
   },
   data() {
     return {
@@ -83,7 +83,7 @@ export default {
       filterValue: all,
       filteredProjects: projects,
       titleContent:
-        "<h1 class='title has-ribbon' ref='title'>My Projects<div class='ribbon is-hidden-mobile is-light'>Available at my <a href='https://github.com/rousah' target='_blank'>GitHub</a></div></h1>",
+        "<h1 class='title has-ribbon' ref='title'>My Projects<div class='ribbon is-hidden-mobile is-light'>Available at my <a href='https://github.com/rousah' target='_blank'>GitHub</a></div></h1>"
     };
   },
   methods: {
@@ -91,7 +91,7 @@ export default {
       this.filterValue = value;
       console.log(this.filterValue);
       this.filteredProjects = [];
-      this.projects.forEach((project) => {
+      this.projects.forEach(project => {
         if (this.isFilteredProjectType(project.types)) {
           this.filteredProjects.push(project);
         }
@@ -107,16 +107,16 @@ export default {
     getAllTechnologies() {
       var techs = [];
       // Check all projects
-      this.projects.forEach((project) => {
+      this.projects.forEach(project => {
         // Add all technologies of each project
-        project.technologies.forEach((tech) => {
+        project.technologies.forEach(tech => {
           techs.push(tech);
         });
       });
       // Convert to set to remove duplicates
       return [...new Set(techs)];
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -127,11 +127,11 @@ export default {
 }
 
 img {
-image-rendering: -moz-crisp-edges; /* Firefox */
-image-rendering: -o-crisp-edges; /* Opera */
-image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
-image-rendering: crisp-edges;
--ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 
 @media only screen and (min-width: 1024px) {

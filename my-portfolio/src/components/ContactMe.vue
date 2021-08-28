@@ -50,11 +50,10 @@ export default {
   name: "ContactMe",
   props: {},
   components: {
-    Title,
-  },
+    Title
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
+<style scoped></style>

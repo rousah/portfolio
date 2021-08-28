@@ -8,16 +8,16 @@
 export default {
   name: "Title",
   props: {
-    title: String,
+    title: String
   },
-  mounted: function () {
-    this.$nextTick(function () {
+  mounted: function() {
+    this.$nextTick(function() {
       // Code that will run only after the
       // entire view has been rendered
       const section = this.$refs["title"];
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
           const title = entry.target;
 
           if (entry.isIntersecting) {
@@ -29,9 +29,8 @@ export default {
 
       observer.observe(section);
     });
-  },
+  }
 };
 </script>
 
-<style>
-</style>
+<style></style>

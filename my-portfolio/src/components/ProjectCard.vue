@@ -37,21 +37,21 @@ import ProjectModal from "./ProjectModal.vue";
 export default {
   name: "ProjectCard",
   props: {
-    projectInfo: Object,
+    projectInfo: Object
   },
   components: {
-    ProjectModal,
+    ProjectModal
   },
   data() {
     return {
-      isOpen: false,
+      isOpen: false
     };
   },
   methods: {
     toggleModal() {
       this.isOpen = !this.isOpen;
-    },
-  },
+    }
+  }
 };
 </script>
 
