@@ -101,5 +101,78 @@
         ],
         "year": "2018-2019",
         "imageCredits": "<a href='https://www.freepik.com/psd/computer' target='_blank'>Computer psd created by rawpixel.com - www.freepik.com</a>"
+    },
+    {
+        "title": "Senet VR",
+        "description": "Senet is a VR experience based on the ancient egyptian game with the same name. For this project we made an app with AR for the board game and the VR experience adapted to cardboard, as well as a complete VR experience for desktop with glasses.",
+        "shortDescription": "VR experience for desktop and AR/VR app",
+        "photo": "senet.png",
+        "repository": "https://github.com/Real-Delusion/SenetVR",
+        "technologies": [
+            "Unity",
+            "Maya",
+            "Android",
+            "C#"
+        ],
+        "types": [
+            "app",
+            "game"
+        ],
+        "year": "2020-2021",
+        "imageCredits": "Mockup image by <a href='rawpixel.com' target='_blank'>rawpixel.com</a>"
+    },
+    {
+        "title": "Tapas Plaza",
+        "description": "This project consists of the design and implementation of a responsive website for a restaurant: Tapas Plaza. It's made with plain HTML5, CSS and Bootstrap. It's also connected to an online ordering service.",
+        "shortDescription": "Website for restaurant",
+        "photo": "tapasplaza.png",
+        "link": "https://tapasplaza.es/",
+        "repository": "https://github.com/Tapas-Plaza/tapas-plaza.github.io",
+        "technologies": [
+            "HTML5",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+        ],
+        "types": [
+            "web"
+        ],
+        "year": "2020"
+    },
+    {
+        "title": "Cookobot",
+        "description": "This project consists of the design and implementation of a responsive website for a restaurant: Tapas Plaza. It's made with plain HTML5, CSS and Bootstrap. It's also connected to an online ordering service.",
+        "shortDescription": "Website for restaurant",
+        "photo": "tapasplaza.png",
+        "link": "https://tapasplaza.es/",
+        "repository": "https://github.com/Tapas-Plaza/tapas-plaza.github.io",
+        "technologies": [
+            "HTML5",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+        ],
+        "types": [
+            "web"
+        ],
+        "year": "2020"
+    },
+    {
+        "title": "Cultisense",
+        "description": "This project consists of the design and implementation of a responsive website for a restaurant: Tapas Plaza. It's made with plain HTML5, CSS and Bootstrap. It's also connected to an online ordering service.",
+        "shortDescription": "Website for restaurant",
+        "photo": "tapasplaza.png",
+        "link": "https://tapasplaza.es/",
+        "repository": "https://github.com/Tapas-Plaza/tapas-plaza.github.io",
+        "technologies": [
+            "HTML5",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+        ],
+        "types": [
+            "web"
+        ],
+        "year": "2018"
     }
 ]
