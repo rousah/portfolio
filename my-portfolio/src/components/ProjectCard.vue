@@ -13,7 +13,7 @@
         </figure>
       </div>
       <div class="card-content p-4">
-        <p class="title is-4">{{ projectInfo.title }}</p>
+        <p class="title is-4 mb-2">{{ projectInfo.title }}</p>
         <div class="pills mb-1">
           <span
             class="tag is-rounded is-family-monospace"
@@ -70,7 +70,9 @@ export default {
 }
 @media only screen and (min-width: 1024px) {
   .card-content {
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available;
+    height: 100%; */
+    flex: 1;
   }
 }
 </style>
