@@ -5,7 +5,7 @@
     <div class="container is-max-desktop">
       <about-me />
       <my-projects />
-     <!-- <my-skills /> -->
+      <!-- <my-skills /> -->
       <contact-me />
     </div>
   </div>
@@ -26,14 +26,14 @@ export default {
     Hero,
     AboutMe,
     MyProjects,
-   // MySkills,
-    ContactMe,
+    // MySkills,
+    ContactMe
   },
   data() {
     return {
-      showNav: false,
+      showNav: false
     };
-  },
+  }
 };
 </script>
 

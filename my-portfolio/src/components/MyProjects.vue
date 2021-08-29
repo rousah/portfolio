@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <template>
   <section id="projects" class="section is-medium">
     <Title v-html="titleContent" />
@@ -5,38 +6,50 @@
       <nav class="level is-mobile container">
         <p class="level-item has-text-centered">
           <button
-            class="button is-white"
+            class="button is-white hasBadge"
             @click="filterProjects('all')"
             v-bind:class="{ 'is-primary': filterValue == 'all' }"
           >
             All
+            <span title="Badge top right" class="badge">{{
+              filteredProjectsCount("all")
+            }}</span>
           </button>
         </p>
         <p class="level-item has-text-centered">
           <button
-            class="button is-white"
+            class="button is-white hasBadge"
             @click="filterProjects('web')"
             v-bind:class="{ 'is-primary': filterValue == 'web' }"
           >
             Webs
+            <span title="Badge top right" class="badge">{{
+              filteredProjectsCount("web")
+            }}</span>
           </button>
         </p>
         <p class="level-item has-text-centered">
           <button
-            class="button is-white"
+            class="button is-white hasBadge"
             @click="filterProjects('app')"
             v-bind:class="{ 'is-primary': filterValue == 'app' }"
           >
             Apps
+            <span title="Badge top right" class="badge">{{
+              filteredProjectsCount("app")
+            }}</span>
           </button>
         </p>
         <p class="level-item has-text-centered">
           <button
-            class="button is-white"
+            class="button is-white hasBadge"
             @click="filterProjects('game')"
             v-bind:class="{ 'is-primary': filterValue == 'game' }"
           >
             Games
+            <span title="Badge top right" class="badge">{{
+              filteredProjectsCount("game")
+            }}</span>
           </button>
         </p>
       </nav>
@@ -89,13 +102,21 @@ export default {
   methods: {
     filterProjects(value) {
       this.filterValue = value;
-      console.log(this.filterValue);
       this.filteredProjects = [];
       this.projects.forEach(project => {
         if (this.isFilteredProjectType(project.types)) {
           this.filteredProjects.push(project);
         }
       });
+    },
+    filteredProjectsCount(value) {
+      var count = 0;
+      if (value != "all") {
+        this.projects.forEach(project => {
+          if (project.types.includes(value)) count++;
+        });
+        return count;
+      } else return this.projects.length;
     },
     isFilteredProjectType(types) {
       if (this.filterValue != "all") {
@@ -124,6 +145,16 @@ export default {
 <style>
 .tag {
   margin-right: 0.5rem;
+}
+
+.hasBadge {
+  display: relative;
+}
+
+.badge {
+  position: relative !important;
+  transform: none !important;
+  margin-left: 0.4rem;
 }
 
 img {
