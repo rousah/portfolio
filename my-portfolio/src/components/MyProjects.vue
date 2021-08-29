@@ -11,9 +11,12 @@
             v-bind:class="{ 'is-primary': filterValue == 'all' }"
           >
             All
-            <span title="Badge top right" class="badge">{{
-              filteredProjectsCount("all")
-            }}</span>
+            <span
+              title="Badge top right"
+              class="badge"
+              v-bind:class="{ 'is-light': filterValue != 'all' }"
+              >{{ filteredProjectsCount("all") }}</span
+            >
           </button>
         </p>
         <p class="level-item has-text-centered">
@@ -23,9 +26,12 @@
             v-bind:class="{ 'is-primary': filterValue == 'web' }"
           >
             Webs
-            <span title="Badge top right" class="badge">{{
-              filteredProjectsCount("web")
-            }}</span>
+            <span
+              title="Badge top right"
+              class="badge"
+              v-bind:class="{ 'is-light': filterValue != 'web' }"
+              >{{ filteredProjectsCount("web") }}</span
+            >
           </button>
         </p>
         <p class="level-item has-text-centered">
@@ -35,9 +41,12 @@
             v-bind:class="{ 'is-primary': filterValue == 'app' }"
           >
             Apps
-            <span title="Badge top right" class="badge">{{
-              filteredProjectsCount("app")
-            }}</span>
+            <span
+              title="Badge top right"
+              class="badge"
+              v-bind:class="{ 'is-light': filterValue != 'app' }"
+              >{{ filteredProjectsCount("app") }}</span
+            >
           </button>
         </p>
         <p class="level-item has-text-centered">
@@ -47,9 +56,12 @@
             v-bind:class="{ 'is-primary': filterValue == 'game' }"
           >
             Games
-            <span title="Badge top right" class="badge">{{
-              filteredProjectsCount("game")
-            }}</span>
+            <span
+              title="Badge top right"
+              class="badge"
+              v-bind:class="{ 'is-light': filterValue != 'game' }"
+              >{{ filteredProjectsCount("game") }}</span
+            >
           </button>
         </p>
       </nav>
