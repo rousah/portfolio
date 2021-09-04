@@ -1,178 +1,128 @@
 [
-    {
-        "title": "AUCO",
-        "description": "AUCO is a gamified online tool made with React that focuses on helping primary and middle school teachers to fight against bullying, in terms of detection and mitigation, and offering an open space where the students can communicate their worries to their teachers. It is part of an ongoing investigation in collaboration with the UPV, UV and Florida Universitaria.",
-        "shortDescription": "Gamified online tool made with React.",
-        "photo": "auco.png",
-        "link": "http://auco.gti-ia.upv.es",
-        "repository": "https://github.com/rousah/AUCO",
-        "technologies": [
-            "JavaScript",
-            "React",
-            "MongoDB",
-            "Express",
-            "NodeJS"
-        ],
-        "types": [
-            "web",
-            "game"
-        ],
-        "year": "2020-2021",
-        "imageCredits": "<a href='https://www.freepik.com/psd/background' target='_blank'>Background psd created by rawpixel.com - www.freepik.com</a>"
-    },
-    {
-        "title": "Lost Scout",
-        "description": "Lost Scout is a puzzle based computer video game made with Unity (C#), it has 3D modelled components and the main goal of the game is to help the little scout Finn find his way back to camp.",
-        "shortDescription": "Puzzle based computer video game made with Unity3D.",
-        "photo": "lostscout.png",
-        "link": "https://do-videogames.webs.upv.es/juegos/lost-scout/",
-        "repository": "https://gitlab.com/real-delusion/lost-scout",
-        "technologies": [
-            "Unity",
-            "3DsMax",
-            "C#"
-        ],
-        "types": [
-            "game"
-        ],
-        "year": "2019",
-        "imageCredits": "Mockup image by <a href='rawpixel.com' target='_blank'>rawpixel.com</a>"
-    },
-    {
-        "title": "Wecycle",
-        "description": "Wecycle is a mobile application, currently only available for Android, that helps find the nearest recycling spots to make it more convenient and fast to recycle. Made with Java in Android Studio. Currently it's only available in Spain (DEMO).",
-        "shortDescription": "Android app that helps find the nearest recycling spots on a map.",
-        "photo": "wecycle.png",
-        "link": "https://tinyurl.com/wecycleplaystore",
-        "repository": "https://github.com/Teasine",
-        "technologies": [
-            "Android Studio",
-            "Java",
-            "NodeJS",
-            "JavaScript",
-            "SQL",
-            "Express"
-        ],
-        "types": [
-            "app"
-        ],
-        "year": "2019-2020",
-        "imageCredits": "<a href='https://www.freepik.com/psd/mockup' target='_blank'>Mockup psd created by user17882893 - www.freepik.com</a>"
-    },
-    {
-        "title": "Smart Scale and House",
-        "description": "IOT project: it consists of an intelligent house with sensors for the elderly to keep track of their health and monitor themselves using an Android app and a smart scale, thanks to Arduino.",
-        "shortDescription": "IOT house and app for the elderly to keep track of their health.",
-        "photo": "iot.png",
-        "repository": "https://github.com/rousah/Bascula-grupo-2",
-        "technologies": [
-            "Android Studio",
-            "Java",
-            "Arduino",
-            "C++",
-            "Firebase"
-        ],
-        "types": [
-            "app",
-            "IOT"
-        ],
-        "year": "2018",
-        "imageCredits": "<a href='https://www.freepik.com/psd/mockup'>Mockup psd created by rawpixel.com - www.freepik.com</a>"
-    },
-    {
-        "title": "Poluzone",
-        "description": "Poluzone consists of an Android app and website to keep track of the pollution in the area. The app connects to an air pollution sensor with Bluetooth and shows realtime pollution information on a map, that is also available on the website.",
-        "shortDescription": "Pollution control app and website",
-        "photo": "poluzone.png",
-        "repository": "https://github.com/Poluzone",
-        "technologies": [
-            "Android Studio",
-            "Java",
-            "Arduino",
-            "C++",
-            "HTML5",
-            "NodeJS",
-            "Express",
-            "Bootstrap"
-        ],
-        "types": [
-            "app",
-            "web"
-        ],
-        "year": "2018-2019",
-        "imageCredits": "<a href='https://www.freepik.com/psd/computer' target='_blank'>Computer psd created by rawpixel.com - www.freepik.com</a>"
-    },
-    {
-        "title": "Senet VR",
-        "description": "Senet is a VR experience based on the ancient egyptian game with the same name. For this project we made an app with AR for the board game and the VR experience adapted to cardboard, as well as a complete VR experience for desktop with glasses.",
-        "shortDescription": "VR experience for desktop and AR/VR app",
-        "photo": "senet.png",
-        "repository": "https://github.com/Real-Delusion/SenetVR",
-        "technologies": [
-            "Unity",
-            "Maya",
-            "Android",
-            "C#"
-        ],
-        "types": [
-            "app",
-            "game"
-        ],
-        "year": "2020-2021",
-        "imageCredits": "Mockup image by <a href='rawpixel.com' target='_blank'>rawpixel.com</a>"
-    },
-    {
-        "title": "Tapas Plaza",
-        "description": "This project consists of the design and implementation of a responsive website for a restaurant: Tapas Plaza. It's made with plain HTML5, CSS and Bootstrap. It's also connected to an online ordering service.",
-        "shortDescription": "Website for restaurant",
-        "photo": "tapasplaza.png",
-        "link": "https://tapasplaza.es/",
-        "repository": "https://github.com/Tapas-Plaza/tapas-plaza.github.io",
-        "technologies": [
-            "HTML5",
-            "CSS",
-            "Bootstrap",
-            "JavaScript"
-        ],
-        "types": [
-            "web"
-        ],
-        "year": "2020"
-    },
-    {
-        "title": "Cookobot",
-        "description": "This project consists of the design and implementation of a responsive website for a restaurant: Tapas Plaza. It's made with plain HTML5, CSS and Bootstrap. It's also connected to an online ordering service.",
-        "shortDescription": "Website for restaurant",
-        "photo": "tapasplaza.png",
-        "link": "https://tapasplaza.es/",
-        "repository": "https://github.com/Tapas-Plaza/tapas-plaza.github.io",
-        "technologies": [
-            "HTML5",
-            "CSS",
-            "Bootstrap",
-            "JavaScript"
-        ],
-        "types": [
-            "web"
-        ],
-        "year": "2020"
-    },
-    {
-        "title": "Cultisense",
-        "description": "This project consists of the design and implementation of a responsive website for a restaurant: Tapas Plaza. It's made with plain HTML5, CSS and Bootstrap. It's also connected to an online ordering service.",
-        "shortDescription": "Website for restaurant",
-        "photo": "tapasplaza.png",
-        "link": "https://tapasplaza.es/",
-        "repository": "https://github.com/Tapas-Plaza/tapas-plaza.github.io",
-        "technologies": [
-            "HTML5",
-            "CSS",
-            "Bootstrap",
-            "JavaScript"
-        ],
-        "types": [
-            "web"
-        ],
-        "year": "2018"
-    }
+  {
+    "title": "AUCO",
+    "description": "AUCO is a gamified online tool made with React that focuses on helping primary and middle school teachers to fight against bullying, in terms of detection and mitigation, and offering an open space where the students can communicate their worries to their teachers. It is part of an ongoing investigation in collaboration with the UPV, UV and Florida Universitaria.",
+    "shortDescription": "Gamified online tool made with React.",
+    "photo": "auco.png",
+    "link": "http://auco.gti-ia.upv.es",
+    "repository": "https://github.com/rousah/AUCO",
+    "technologies": ["JavaScript", "React", "MongoDB", "Express", "NodeJS"],
+    "types": ["web", "game"],
+    "year": "2020-2021",
+    "imageCredits": "<a href='https://www.freepik.com/psd/background' target='_blank'>Background psd created by rawpixel.com - www.freepik.com</a>"
+  },
+  {
+    "title": "Lost Scout",
+    "description": "Lost Scout is a puzzle based computer video game made with Unity (C#), it has 3D modelled components and the main goal of the game is to help the little scout Finn find his way back to camp.",
+    "shortDescription": "Puzzle based computer video game made with Unity3D.",
+    "photo": "lostscout.png",
+    "link": "https://do-videogames.webs.upv.es/juegos/lost-scout/",
+    "repository": "https://gitlab.com/real-delusion/lost-scout",
+    "technologies": ["Unity", "3DsMax", "C#"],
+    "types": ["game"],
+    "year": "2019",
+    "imageCredits": "Mockup image by <a href='rawpixel.com' target='_blank'>rawpixel.com</a>"
+  },
+  {
+    "title": "Wecycle",
+    "description": "Wecycle is a mobile application, currently only available for Android, that helps find the nearest recycling spots to make it more convenient and fast to recycle. Made with Java in Android Studio. Currently it's only available in Spain (DEMO).",
+    "shortDescription": "Android app that helps find the nearest recycling spots on a map.",
+    "photo": "wecycle.png",
+    "link": "https://tinyurl.com/wecycleplaystore",
+    "repository": "https://github.com/Teasine",
+    "technologies": [
+      "Android Studio",
+      "Java",
+      "NodeJS",
+      "JavaScript",
+      "SQL",
+      "Express"
+    ],
+    "types": ["app"],
+    "year": "2019-2020",
+    "imageCredits": "<a href='https://www.freepik.com/psd/mockup' target='_blank'>Mockup psd created by user17882893 - www.freepik.com</a>"
+  },
+  {
+    "title": "Smart Scale and House",
+    "description": "IOT project: it consists of an intelligent house with sensors for the elderly to keep track of their health and monitor themselves using an Android app and a smart scale, thanks to Arduino.",
+    "shortDescription": "IOT house and app for the elderly to keep track of their health.",
+    "photo": "iot.png",
+    "repository": "https://github.com/rousah/Bascula-grupo-2",
+    "technologies": ["Android Studio", "Java", "Arduino", "C++", "Firebase"],
+    "types": ["app", "IOT", "sensor"],
+    "year": "2018-2019",
+    "imageCredits": "<a href='https://www.freepik.com/psd/mockup'>Mockup psd created by rawpixel.com - www.freepik.com</a>"
+  },
+  {
+    "title": "Poluzone",
+    "description": "Poluzone consists of an Android app and website to keep track of the pollution in the area. The app connects to an air pollution sensor with Bluetooth and shows realtime pollution information on a map, that is also available on the website.",
+    "shortDescription": "Pollution control app and website",
+    "photo": "poluzone.png",
+    "repository": "https://github.com/Poluzone",
+    "technologies": [
+      "Android Studio",
+      "Java",
+      "Arduino",
+      "C++",
+      "HTML5",
+      "NodeJS",
+      "Express",
+      "Bootstrap"
+    ],
+    "types": ["app", "web", "sensor"],
+    "year": "2018-2019",
+    "imageCredits": "<a href='https://www.freepik.com/psd/computer' target='_blank'>Computer psd created by rawpixel.com - www.freepik.com</a>"
+  },
+  {
+    "title": "Senet VR/AR",
+    "description": "Senet is a VR/AR experience based on the ancient egyptian game with the same name. For this project we made an app with AR for the board game and the VR experience adapted to cardboard, as well as a complete VR experience for desktop with glasses.",
+    "shortDescription": "VR experience for desktop and AR/VR app",
+    "photo": "senet.png",
+    "repository": "https://github.com/Real-Delusion/SenetVR",
+    "technologies": ["Unity", "Maya", "Android", "C#"],
+    "types": ["app", "game"],
+    "year": "2020-2021",
+    "imageCredits": "Mockup image by <a href='rawpixel.com' target='_blank'>rawpixel.com</a>"
+  },
+  {
+    "title": "Tapas Plaza",
+    "description": "This project consists of the design and implementation of a responsive website for a restaurant: Tapas Plaza. It's made with plain HTML5, CSS and Bootstrap. It's also connected to an online ordering service.",
+    "shortDescription": "Website for restaurant",
+    "photo": "tapasplaza.png",
+    "link": "https://tapasplaza.es/",
+    "repository": "https://github.com/Tapas-Plaza/tapas-plaza.github.io",
+    "technologies": ["HTML5", "CSS", "Bootstrap", "JavaScript"],
+    "types": ["web"],
+    "year": "2020"
+  },
+  {
+    "title": "Cookobot",
+    "description": "Waiter robot 'Cookobot' is created to manage an automated restaurant. We designed and implemented both an admin and a client interface. The admin controls the robot and its tasks on the tablet or computers application, and the client interacts with a mobile app to get its attention or receive support. The robot moves around the restaurant waiting tables.",
+    "shortDescription": "Waiter robot, with admin and client interface",
+    "photo": "cookobot.png",
+    "repository": "https://gitlab.com/real-delusion/cookobot",
+    "technologies": [
+      "VueJS",
+      "Bulma",
+      "JavaScript",
+      "ROS",
+      "Python",
+      "Android Studio",
+      "AWS",
+      "AI"
+    ],
+    "types": ["web", "app", "robot"],
+    "year": "2020"
+  },
+  {
+    "title": "Cultisense",
+    "description": "Cultisense consists of a node with various sensors (temperature, humidity, salinity...) that is designed to track the status of the environment where crops are planted. The collected data is sent to a database and shown on the website, so that farmers can have more control over their crops.",
+    "shortDescription": "Sensor node and website to track crops.",
+    "photo": "cultisense.png",
+    "repository": "https://github.com/rousah/proyectoWebG3",
+    "technologies": ["HTML5", "CSS", "Bootstrap", "JavaScript", "Arduino"],
+    "types": ["web", "sensor"],
+    "year": "2017-2018",
+    "imageCredits": "Mockup image by <a href='https://www.freepik.com/photos/mockup' target='_blank'>www.freepik.com</a>"
+  }
 ]
