@@ -8,14 +8,12 @@
         </figure>
       </div>
       <div class="column">
-        Hello! My name is Rosa, I am a Software Developer 👩🏼‍💻. I have recently
-        graduated from the Polythecnic University of Valencia (Spain) in
-        Interactive Technologies Engineering, and am currently doing a Front-end
-        internship at
+        Hello! My name is Rosa, I am a Software Developer 👩🏼‍💻. Currently I work at
         <a href="https://www.theselectionlab.com" target="_blank">
           The Selection Lab
-        </a>
-        in Amsterdam 📍. I am mainly attracted to web, app and game development,
+        </a> in Amsterdam 📍. I am a graduate
+        from the Polythecnic University of Valencia (Spain) in
+        Interactive Technologies Engineering. I am mainly attracted to web, app and game development,
         with a special focus on creating attractive and fun UI's. I love working
         in teams in an agile environment, drinking tea and practicing yoga 🧘🏼‍♀️.
       </div>
