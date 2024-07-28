@@ -26,5 +26,3 @@ let app = new Vue({
 });
 
 app.$mount("#app");
-
-console.log("main.js: App mounted");
