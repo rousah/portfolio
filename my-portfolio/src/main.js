@@ -26,3 +26,5 @@ let app = new Vue({
 });
 
 app.$mount("#app");
+
+console.log("Hi! Welcome to my portfolio :) Nice to see u lurking around here!");
