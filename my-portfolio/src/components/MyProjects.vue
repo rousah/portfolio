@@ -3,7 +3,7 @@
   <section id="projects" class="section is-medium">
     <Title v-html="titleContent" />
     <div class="projects-container">
-      <nav class="level is-mobile container">
+      <nav class="level is-mobile container navigation">
         <p class="level-item has-text-centered">
           <button
             class="button is-white hasBadge"
@@ -157,6 +157,10 @@ export default {
 <style>
 .tag {
   margin-right: 0.5rem;
+}
+
+.navigation {
+  flex-wrap: wrap;
 }
 
 .hasBadge {
