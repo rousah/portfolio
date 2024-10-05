@@ -1,6 +1,6 @@
 import React from 'react';
-import project from '../assets/sections/projects.png';
-import aboutMe from '../assets/sections/about_me.png';
+import project from '@/app/assets/home/sections/projects.png';
+import aboutMe from '@/app/assets/home/sections/about_me.png';
 import Polaroid from '@/app/home/Polaroid';
 import Contact from '@/app/home/Contact';
 import { Colors } from '@/app/types/colors';
