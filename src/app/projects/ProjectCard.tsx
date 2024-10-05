@@ -23,6 +23,7 @@ export default function ProjectCard(props: Props) {
             src={props.image}
             alt="placeholder"
             style={{ width: '100%', height: 'auto' }}
+            priority={true}
           />
         </div>
         <div className="bg-pink">{props.type}</div>
