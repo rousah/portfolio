@@ -1,4 +1,4 @@
-import Sections from '@/app/home/sections';
+import Sections from '@/app/home/Sections';
 
 export default function Home() {
   const shadowTexture = {
