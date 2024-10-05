@@ -28,6 +28,10 @@ const config: Config = {
       fontFamily: {
         'archivo-black': 'var(--font-archivo-black)',
         lora: 'var(--font-lora)',
+        radley: 'var(--font-radley)',
+      },
+      borderWidth: {
+        3: '3px',
       },
     },
   },

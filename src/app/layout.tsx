@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Archivo_Black, Lora } from 'next/font/google';
+import { Archivo_Black, Lora, Radley } from 'next/font/google';
 import './globals.css';
 
 const archivoBlack = Archivo_Black({
@@ -14,6 +14,13 @@ const lora = Lora({
   variable: '--font-lora',
 });
 
+const radley = Radley({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-radley',
+  style: 'italic',
+});
+
 export const metadata: Metadata = {
   title: 'Portfolio Rosa',
   description: 'Welcome to my portfolio',
@@ -25,7 +32,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${archivoBlack.variable} ${lora.variable}`}>
+    <html
+      lang="en"
+      className={`${archivoBlack.variable} ${lora.variable} ${radley.variable}`}
+    >
       <body className={archivoBlack.className}>{children}</body>
     </html>
   );
