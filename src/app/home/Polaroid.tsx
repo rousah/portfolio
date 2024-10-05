@@ -11,7 +11,7 @@ type Props = {
 export default function Polaroid(props: Props) {
   const borderClassNames = `border-${props.color} border-solid`;
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col" key={props.title}>
       <div
         className={`${borderClassNames} border-[24px] grow flex items-center`}
       >
