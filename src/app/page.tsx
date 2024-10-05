@@ -1,4 +1,5 @@
 import Sections from '@/app/home/Sections';
+import DownloadCVButton from '@/app/home/DownloadCVButton';
 
 export default function Home() {
   const shadowTexture = {
@@ -17,6 +18,9 @@ export default function Home() {
       </div>
       <div className="p-8 md:p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5">
         <Sections></Sections>
+      </div>
+      <div className="flex justify-center">
+        <DownloadCVButton></DownloadCVButton>
       </div>
     </main>
   );
