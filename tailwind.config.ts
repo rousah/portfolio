@@ -25,6 +25,10 @@ const config: Config = {
         white: '#F3FDFF',
         black: '#14001E',
       },
+      fontFamily: {
+        'archivo-black': 'var(--font-archivo-black)',
+        lora: 'var(--font-lora)',
+      },
     },
   },
   plugins: [],
