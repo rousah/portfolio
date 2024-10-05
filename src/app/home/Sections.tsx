@@ -11,11 +11,15 @@ export default function Sections() {
       title: 'Projects',
       image: project,
       color: Colors.purple,
+      href: '/projects',
+      id: 0,
     },
     {
       title: 'About me',
       image: aboutMe,
       color: Colors.blue,
+      href: '/about_me',
+      id: 1,
     },
   ];
 
@@ -26,6 +30,8 @@ export default function Sections() {
           title={section.title}
           image={section.image}
           color={section.color}
+          href={section.href}
+          key={section.id}
         ></Polaroid>
       ))}
       <Contact></Contact>
