@@ -4,13 +4,8 @@ export default function Home() {
   const shadowTexture = {
     boxShadow:
       'inset 0px 0px 56px 0px #9681B8, inset 50px -90px 90px 0px #FAF796, inset 26px 19px 100px 36px #75ABDB',
-    backgroundBlendMode: 'multiply',
-    background: `
-      radial-gradient(circle at center,
-        #9681B8 7%,
-        #FAF796 50%,
-        #75ABDB 100%)
-    `,
+    background:
+      'linear-gradient(to bottom right, #9681B8 0%, #FAF796 25%, #75ABDB 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #9681B8 0%, #FAF796 25%, #75ABDB 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #9681B8 0%, #FAF796 25%, #75ABDB 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #9681B8 0%, #FAF796 25%, #75ABDB 50%) top right / 50% 50% no-repeat',
     overflow: 'hidden',
   };
 
