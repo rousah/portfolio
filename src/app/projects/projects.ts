@@ -1,4 +1,5 @@
 import content from '@/app/projects/content.json';
+import { StaticImageData } from 'next/image';
 
 const projectsWithImageStrings = content;
 const projects = projectsWithImageStrings.map((project) => {
@@ -10,5 +11,15 @@ const projects = projectsWithImageStrings.map((project) => {
     image,
   };
 });
+
+export type Project = {
+  id: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  links: { __html: string }[];
+  image: StaticImageData;
+  type: string;
+};
 
 export default projects;

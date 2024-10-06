@@ -1,36 +1,32 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image';
+import { type Project } from '@/app/projects/projects';
 
 type Props = {
-  title: string;
-  image: StaticImageData;
-  type: string;
-  id: string;
+  project: Project;
+  borderClassName: string;
 };
 
 export default function ProjectCard(props: Props) {
-  const borderClassNames = 'border-green border-solid border-3';
+  const project = props.project;
+  const borderClassNames = props.borderClassName;
 
   return (
-    <Link
-      href={`projects/${props.id}`}
-      className="flex flex-col text-black font-radley"
-    >
+    <div className="flex flex-col text-black font-radley">
       <div className={`${borderClassNames} border-b-0`}>
         <div className={` grow flex items-center`}>
           <Image
-            src={props.image}
+            src={project.image}
             alt="placeholder"
             style={{ width: '100%', height: 'auto' }}
             priority={true}
           />
         </div>
-        <div className="bg-pink">{props.type}</div>
+        <div className="bg-pink">{project.type}</div>
       </div>
       <div className={`${borderClassNames} bg-white py-3 text-center text-4xl`}>
-        {props.title}
+        {project.title}
       </div>
-    </Link>
+    </div>
   );
 }
