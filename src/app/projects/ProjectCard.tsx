@@ -20,6 +20,7 @@ export default function ProjectCard(props: Props) {
             alt="placeholder"
             style={{ width: '100%', height: 'auto' }}
             priority={true}
+            className="aspect-4/3 object-contain"
           />
         </div>
         <div className="bg-pink">{project.type}</div>

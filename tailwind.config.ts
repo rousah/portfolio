@@ -33,6 +33,9 @@ const config: Config = {
       borderWidth: {
         3: '3px',
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
     },
   },
   plugins: [],

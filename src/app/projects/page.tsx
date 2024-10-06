@@ -1,16 +1,15 @@
-import Heading1 from '@/app/components/text/Heading1';
 import ProjectsList from '@/app/projects/ProjectsList';
+import PageLayout from '@/app/components/page/PageLayout';
 
 // TODO: add real data
 export default function Projects() {
   return (
-    <main className="bg-purple min-w-full min-h-full">
-      <div className="min-h-screen p-8 md:p-14 pt-0 md:pt-0 pb-0">
-        <Heading1>Projects</Heading1>
-        <div className="bg-white p-10">
+    <PageLayout color="purple">
+      <div className="min-w-full">
+        <div className="bg-white p-10 grid md:grid-cols-3 gap-6">
           <ProjectsList></ProjectsList>
         </div>
       </div>
-    </main>
+    </PageLayout>
   );
 }

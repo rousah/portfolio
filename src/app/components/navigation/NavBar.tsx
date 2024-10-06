@@ -1,4 +1,3 @@
-import Heading1 from '@/app/components/text/Heading1';
 import Link from 'next/link';
 import { Color } from '@/app/types/colors';
 
