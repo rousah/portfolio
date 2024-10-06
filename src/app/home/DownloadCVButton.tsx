@@ -14,6 +14,8 @@ export default function DonwloadCVButton() {
     textShadow: doubleShadow,
   };
 
+  // TODO: cv link
+
   return (
     <button className="bg-yellow text-3xl text-black pt-5 pb-3 px-7">
       <span style={textShadow}>{downloadCVText}</span>

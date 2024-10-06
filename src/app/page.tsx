@@ -1,6 +1,6 @@
 import Sections from '@/app/home/Sections';
 import DownloadCVButton from '@/app/home/DownloadCVButton';
-import NavBar from '@/app/components/navigation/NavBar';
+import PageLayout from '@/app/components/page/PageLayout';
 
 export default function Home() {
   const shadowTexture = {
@@ -12,18 +12,18 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-green min-w-full min-h-full">
-      <NavBar color="green"></NavBar>
-      <div className="h-screen p-8 md:p-14 pt-0 md:pt-0 grid grid-rows-[auto_1fr]">
-        <div className="h-14 sticky top-0 bg-green"></div>
+    <PageLayout color="green">
+      <div className="h-screen pb-8 md:pb-14">
         <div style={shadowTexture} className="w-full h-full"></div>
       </div>
-      <div className="p-8 md:p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5">
-        <Sections></Sections>
+      <div className="min-h-screen">
+        <div className="md:pt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 mb-24">
+          <Sections></Sections>
+        </div>
+        <div className="flex justify-center">
+          <DownloadCVButton></DownloadCVButton>
+        </div>
       </div>
-      <div className="flex justify-center">
-        <DownloadCVButton></DownloadCVButton>
-      </div>
-    </main>
+    </PageLayout>
   );
 }
