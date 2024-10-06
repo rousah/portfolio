@@ -2,6 +2,7 @@ import Heading1 from '@/app/components/text/Heading1';
 import ProjectCard from '@/app/projects/ProjectCard';
 import projects from '@/app/projects/projects';
 
+// TODO: add real data
 export default function Projects() {
   return (
     <main className="bg-purple min-w-full min-h-full">
