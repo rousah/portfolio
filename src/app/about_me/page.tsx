@@ -9,18 +9,18 @@ export default function AboutMe() {
   // TODO: make email clickable
   return (
     <PageLayout color="blue">
-      <div className="min-h-screen text-black">
-        <div className="whitespace-pre-wrap font-lora">
+      <div className="text-black grid md:grid-cols-2 md:gap-x-28 px-14 min-h-80-screen md:items-center">
+        <div className="whitespace-pre-wrap font-lora md:col-start-2 flex items-center">
           {content.description}
           <br />
           <br />
           emiliarosavdh@gmail.com
         </div>
-        <div>
+        <div className="md:col-start-1 md:row-start-1 md:border-20 md:border-solid border-yellow">
           <Image
             src={aboutMeImage}
             alt="placeholder"
-            style={{ width: '100%', height: 'auto' }}
+            style={{ width: '100%' }}
           />
         </div>
       </div>

@@ -32,9 +32,13 @@ const config: Config = {
       },
       borderWidth: {
         3: '3px',
+        '20': '20px',
       },
       aspectRatio: {
         '4/3': '4 / 3',
+      },
+      minHeight: {
+        '80-screen': '80vh',
       },
     },
   },
