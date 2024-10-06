@@ -16,7 +16,7 @@ export default function PageLayout(props: Props) {
       >
         <NavBar color={color}></NavBar>
       </div>
-      <main className={`min-w-full p-8 pt-0 md:px-14 md:py-0`}>
+      <main className="min-w-full p-8 pt-0 md:px-14 md:py-0">
         {props.children}
       </main>
     </div>
