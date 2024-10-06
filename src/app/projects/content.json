@@ -4,13 +4,31 @@
     "description": "Description of project 1",
     "image_id": "about_me",
     "id": "0",
-    "type": "videogame"
+    "type": "videogame",
+    "technologies": ["Unity", "C#"],
+    "links": [
+      {
+        "__html": "Available here: <a href='https://www.google.com'>Google</a>"
+      },
+      {
+        "__html": "Repository: <a href='https://www.github.com'>Github</a>"
+      }
+    ]
   },
   {
     "title": "Project 2",
     "description": "Description of project 2",
     "image_id": "about_me",
     "id": "1",
-    "type": "website"
+    "type": "website",
+    "technologies": ["Unity", "C#"],
+    "links": [
+      {
+        "__html": "Available here: <a href='https://www.google.com'>Google</a>"
+      },
+      {
+        "__html": "Repository: <a href='https://www.github.com'>Github</a>"
+      }
+    ]
   }
 ]
