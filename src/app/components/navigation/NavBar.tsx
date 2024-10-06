@@ -28,6 +28,12 @@ export default function NavBar(props: Props) {
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
           <Link
+            href="/"
+            className="block mt-4 lg:inline-block lg:mt-0 classNamehover:text-white mr-4"
+          >
+            Home
+          </Link>
+          <Link
             href="/projects"
             className="block mt-4 lg:inline-block lg:mt-0 classNamehover:text-white mr-4"
           >
