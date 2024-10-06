@@ -5,7 +5,10 @@ export default function Contact() {
 
   // TODO: add real data
   return (
-    <div className="bg-pink p-[24px] flex justify-between flex-col">
+    <div
+      className="bg-pink p-[24px] flex justify-between flex-col"
+      id="contact"
+    >
       <div className="text-lg text-black">
         <div className={marginTopClassName}>email</div>
         <div className={marginTopClassName}>github</div>

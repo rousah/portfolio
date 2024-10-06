@@ -1,5 +1,6 @@
 import Sections from '@/app/home/Sections';
 import DownloadCVButton from '@/app/home/DownloadCVButton';
+import NavBar from '@/app/components/navigation/NavBar';
 
 export default function Home() {
   const shadowTexture = {
@@ -12,6 +13,7 @@ export default function Home() {
 
   return (
     <main className="bg-green min-w-full min-h-full">
+      <NavBar color="green"></NavBar>
       <div className="h-screen p-8 md:p-14 pt-0 md:pt-0 grid grid-rows-[auto_1fr]">
         <div className="h-14 sticky top-0 bg-green"></div>
         <div style={shadowTexture} className="w-full h-full"></div>

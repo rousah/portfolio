@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${archivoBlack.variable} ${lora.variable} ${radley.variable}`}
+      className={`${archivoBlack.variable} ${lora.variable} ${radley.variable} scroll-smooth`}
     >
       <body className={archivoBlack.className}>{children}</body>
     </html>
