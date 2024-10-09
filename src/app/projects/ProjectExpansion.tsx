@@ -14,15 +14,15 @@ export default function ProjectExpansion(props: Props) {
   return (
     <div className={`font-lora text-black ${borderClassNames} border-t-0 p-4`}>
       <Heading3>Description</Heading3>
-      <p>{project.description}</p>
+      <p className="mb-2">{project.description}</p>
       <Heading3>Technologies & languages</Heading3>
-      <ul>
+      <ul className="mb-2">
         {project.technologies.map((technology) => (
           <li key={technology}>- {technology}</li>
         ))}
       </ul>
       <Heading3>Links</Heading3>
-      <ul>
+      <ul className="mb-2">
         {project.links.map((link, i) => (
           <li
             key={i}
