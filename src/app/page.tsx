@@ -16,8 +16,8 @@ export default function Home() {
       <div className="h-dvh pb-8 md:pb-14">
         <div style={shadowTexture} className="w-full h-full"></div>
       </div>
-      <div className="min-h-dvh">
-        <div className="md:pt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 mb-24">
+      <div className="min-h-dvh pb-5">
+        <div className="md:pt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 mb-24 gap-y-8 lg:gap-y-0">
           <Sections></Sections>
         </div>
         <div className="flex justify-center">
