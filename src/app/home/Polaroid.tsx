@@ -24,7 +24,7 @@ export default function Polaroid(props: Props) {
         />
       </div>
       <div
-        className={`${borderClassNames} border-b-[24px] bg-${props.color} px-[24px] text-right text-4xl`}
+        className={`${borderClassNames} border-b-[24px] bg-${props.color} px-[24px] text-right text-2xl md:text-4xl`}
       >
         {props.title}
       </div>

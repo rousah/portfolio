@@ -15,7 +15,7 @@ export default function ProjectCard(props: Props) {
   return (
     <div className="flex flex-col text-black font-radley">
       <div className={`${borderClassNames} border-b-0`}>
-        <div className={`grow flex items-center`}>
+        <div className="grow flex items-center relative">
           <Image
             src={project.image}
             alt="placeholder"
@@ -25,10 +25,12 @@ export default function ProjectCard(props: Props) {
           />
         </div>
         <div className="bg-pink overflow-hidden whitespace-nowrap">
-          <TextLoop text={project.type}></TextLoop>
+          {/* <TextLoop text={project.type}></TextLoop> */}
         </div>
       </div>
-      <div className={`${borderClassNames} bg-white py-3 text-center text-4xl`}>
+      <div
+        className={`${borderClassNames} bg-white py-2 md:py-3 text-center text-2xl md:text-4xl`}
+      >
         {project.title}
       </div>
     </div>

@@ -24,7 +24,7 @@ export default function Contact() {
         </div>
         <div className={marginTopClassName}>Amsterdam</div>
       </div>
-      <div className="px-[24px] text-right text-4xl">Contact</div>
+      <div className="text-right text-2xl md:text-4xl">Contact</div>
     </div>
   );
 }
