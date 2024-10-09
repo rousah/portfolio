@@ -74,7 +74,7 @@ export default function NavBar(props: Props) {
             Contact
           </Link>
         </div>
-        <div>
+        <div className="mt-4 mb-2 lg:my-0">
           <a href="#">Download CV</a>
         </div>
       </div>
