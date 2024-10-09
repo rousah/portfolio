@@ -49,19 +49,6 @@
     ]
   },
   {
-    "title": "Smart Scale and Home",
-    "description": "IOT project: intelligent home with sensors for the elderly to keep track of their health and monitor themselves using an Android app and a smart scale, made with Arduino.",
-    "image_id": "iot",
-    "id": "iot",
-    "type": "app & hardware",
-    "technologies": ["Android Studio", "Java", "Arduino", "C++", "Firebase"],
-    "links": [
-      {
-        "__html": "Repository: <a href='https://github.com/rousah/Bascula-grupo-2'>Github</a>"
-      }
-    ]
-  },
-  {
     "title": "Poluzone",
     "description": "Poluzone consists of an Android app and website to keep track of the pollution in the area. The app connects to an air pollution sensor with Bluetooth and shows realtime pollution information on a map, that is also available on the website.",
     "image_id": "poluzone",
@@ -145,6 +132,19 @@
     "links": [
       {
         "__html": "Repository: <a href='https://github.com/rousah/proyectoWebG3'>Github</a>"
+      }
+    ]
+  },
+  {
+    "title": "Smart Home",
+    "description": "IOT project: intelligent home with sensors for the elderly to keep track of their health and monitor themselves using an Android app and a smart scale, made with Arduino.",
+    "image_id": "iot",
+    "id": "iot",
+    "type": "app & hardware",
+    "technologies": ["Android Studio", "Java", "Arduino", "C++", "Firebase"],
+    "links": [
+      {
+        "__html": "Repository: <a href='https://github.com/rousah/Bascula-grupo-2'>Github</a>"
       }
     ]
   }
