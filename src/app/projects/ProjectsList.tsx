@@ -5,6 +5,7 @@ import ProjectCard from '@/app/projects/ProjectCard';
 import projects from '@/app/projects/projects';
 import ProjectExpansion from '@/app/projects/ProjectExpansion';
 
+// TODO: fix open projects on rfresh
 export default function ProjectsList() {
   const [expandedProjectId, setExpandedProjectId] = useState<string | null>(
     null
