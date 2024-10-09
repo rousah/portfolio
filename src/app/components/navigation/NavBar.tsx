@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { Color } from '@/app/types/colors';
+import { useState } from 'react';
 
 type Props = {
   color: Color;
@@ -7,25 +10,45 @@ type Props = {
 
 export default function NavBar(props: Props) {
   const color = props.color;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   // TODO: download CV link
   // TODO: mobile view
   return (
     <nav className={`flex items-center justify-between flex-wrap bg-${color}`}>
       <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 border rounded classNameborder-teal-400 hover:text-white hover:border-white">
+        <button
+          className="flex items-center rounded hover:text-white hover:border-white"
+          onClick={toggleMenu}
+        >
           <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-menu"
           >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
           </svg>
         </button>
       </div>
-      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div className="text-sm lg:flex-grow">
+      <div
+        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto text-sm  ${
+          isMenuOpen ? 'block' : 'hidden'
+        }`}
+      >
+        <div className="lg:flex-grow">
           <Link
             href="/"
             className="block mt-4 lg:inline-block lg:mt-0 classNamehover:text-white mr-4"

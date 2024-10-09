@@ -12,7 +12,7 @@ export default function PageLayout(props: Props) {
   return (
     <div className={`bg-${color} min-w-full min-h-dvh`}>
       <div
-        className={`sticky top-0 w-full p-8 md:p-14 bg-${color} md:py-4 z-50`}
+        className={`sticky top-0 w-full p-8 py-2 md:p-14 bg-${color} md:py-4 z-50`}
       >
         <NavBar color={color}></NavBar>
       </div>
