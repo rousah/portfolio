@@ -2,22 +2,33 @@
 
 import Link from 'next/link';
 import { Color } from '@/app/types/colors';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 type Props = {
   color: Color;
 };
 
+// TODO: download CV link
+
 export default function NavBar(props: Props) {
   const color = props.color;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // TODO: download CV link
-  // TODO: mobile view
+  useEffect(() => {
+    if (menuRef.current) {
+      if (isMenuOpen) {
+        menuRef.current.style.height = `${menuRef.current.scrollHeight}px`;
+      } else {
+        menuRef.current.style.height = '0';
+      }
+    }
+  }, [isMenuOpen]);
+
   return (
     <nav className={`flex items-center justify-between flex-wrap bg-${color}`}>
       <div className="block lg:hidden">
@@ -44,33 +55,28 @@ export default function NavBar(props: Props) {
         </button>
       </div>
       <div
-        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto text-sm  ${
-          isMenuOpen ? 'block' : 'hidden'
+        ref={menuRef}
+        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto text-sm nav-menu ${
+          isMenuOpen ? 'open' : ''
         }`}
       >
         <div className="lg:flex-grow">
-          <Link
-            href="/"
-            className="block mt-4 lg:inline-block lg:mt-0 classNamehover:text-white mr-4"
-          >
+          <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 mr-4">
             Home
           </Link>
           <Link
             href="/projects"
-            className="block mt-4 lg:inline-block lg:mt-0 classNamehover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 mr-4"
           >
             Projects
           </Link>
           <Link
             href="/about_me"
-            className="block mt-4 lg:inline-block lg:mt-0 classNamehover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 mr-4"
           >
             About me
           </Link>
-          <Link
-            href="/#contact"
-            className="block mt-4 lg:inline-block lg:mt-0 classNamehover:text-white"
-          >
+          <Link href="/#contact" className="block mt-4 lg:inline-block lg:mt-0">
             Contact
           </Link>
         </div>
@@ -78,6 +84,17 @@ export default function NavBar(props: Props) {
           <a href="#">Download CV</a>
         </div>
       </div>
+      <style jsx>{`
+        .nav-menu {
+          transition: height 0.3s ease;
+          overflow: hidden;
+          height: 0;
+        }
+
+        .nav-menu.open {
+          height: auto;
+        }
+      `}</style>
     </nav>
   );
 }
