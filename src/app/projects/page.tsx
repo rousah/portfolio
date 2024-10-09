@@ -1,7 +1,6 @@
 import ProjectsList from '@/app/projects/ProjectsList';
 import PageLayout from '@/app/components/page/PageLayout';
 
-// TODO: add real data
 export default function Projects() {
   return (
     <PageLayout color="purple">
