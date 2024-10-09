@@ -45,7 +45,7 @@ export default function NavBar(props: Props) {
             About me
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             className="block mt-4 lg:inline-block lg:mt-0 classNamehover:text-white"
           >
             Contact
