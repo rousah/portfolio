@@ -13,10 +13,10 @@ export default function Home() {
 
   return (
     <PageLayout color="green">
-      <div className="h-screen pb-8 md:pb-14">
+      <div className="h-dvh pb-8 md:pb-14">
         <div style={shadowTexture} className="w-full h-full"></div>
       </div>
-      <div className="min-h-screen">
+      <div className="min-h-dvh">
         <div className="md:pt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 mb-24">
           <Sections></Sections>
         </div>
