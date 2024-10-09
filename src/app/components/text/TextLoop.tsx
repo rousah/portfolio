@@ -5,6 +5,7 @@ type Props = {
 };
 
 export default function TextLoop(props: Props) {
+  // TODO: fix loop (project view in mobile)
   const text = props.text;
   const typeLength = text.length;
   const animationDuration = `${typeLength * 4}s`;
