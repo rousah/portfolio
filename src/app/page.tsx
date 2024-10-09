@@ -1,8 +1,10 @@
 import Sections from '@/app/home/Sections';
 import DownloadCVButton from '@/app/home/DownloadCVButton';
 import PageLayout from '@/app/components/page/PageLayout';
+import { CSSProperties } from 'react';
 
 export default function Home() {
+  // TODO: Add shadow to welcome text
   const shadowTexture = {
     boxShadow:
       'inset 0px 0px 56px 0px #9681B8, inset 50px -90px 90px 0px #FAF796, inset 26px 19px 100px 36px #75ABDB',
@@ -11,10 +13,26 @@ export default function Home() {
     overflow: 'hidden',
   };
 
+  const style = {
+    height: '95dvh',
+  };
+
+  const textStyle: CSSProperties = {
+    display: 'inline-block',
+    background: 'linear-gradient(to bottom, #F3FDFF, #FAF796)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+  };
+
   return (
     <PageLayout color="green">
-      <div className="h-dvh pb-8 md:pb-14">
-        <div style={shadowTexture} className="w-full h-full"></div>
+      <div className="pb-8 md:pb-14" style={style}>
+        <div
+          style={shadowTexture}
+          className="w-full h-full text-center pt-3 text-4xl"
+        >
+          <span style={textStyle}>Welcome!</span>
+        </div>
       </div>
       <div className="min-h-dvh pb-5">
         <div className="md:pt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 mb-24 gap-y-8 lg:gap-y-0">
