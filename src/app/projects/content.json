@@ -49,8 +49,8 @@
     ]
   },
   {
-    "title": "Smart Scale and House",
-    "description": "IOT project: intelligent house with sensors for the elderly to keep track of their health and monitor themselves using an Android app and a smart scale, made with Arduino.",
+    "title": "Smart Scale and Home",
+    "description": "IOT project: intelligent home with sensors for the elderly to keep track of their health and monitor themselves using an Android app and a smart scale, made with Arduino.",
     "image_id": "iot",
     "id": "iot",
     "type": "app & hardware",

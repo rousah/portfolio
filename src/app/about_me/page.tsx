@@ -7,14 +7,14 @@ export default function AboutMe() {
   // TODO: improve description
   return (
     <PageLayout color="blue" noPaddingBottom>
-      <div className="text-black grid md:grid-cols-2 md:gap-x-28 md:px-14 min-h-80-screen md:items-center">
-        <div className="whitespace-pre-wrap font-lora md:col-start-2 flex flex-col">
+      <div className="text-black grid lg:grid-cols-2 lg:gap-x-28 lg:px-14 min-h-80-screen lg:items-center">
+        <div className="whitespace-pre-wrap font-lora lg:col-start-2 flex flex-col">
           {content.description}
           <br />
           <br />
           <a href="mailto:emiliarosavdh@gmail.com">emiliarosavdh@gmail.com</a>
         </div>
-        <div className="md:col-start-1 md:row-start-1 md:border-20 md:border-solid border-yellow">
+        <div className="lg:col-start-1 lg:row-start-1 lg:border-20 lg:border-solid border-yellow">
           <Image
             src={aboutMeImage}
             alt="placeholder"

@@ -29,7 +29,7 @@ export default function ProjectCard(props: Props) {
         </div>
       </div>
       <div
-        className={`${borderClassNames} bg-white py-2 md:py-3 text-center text-2xl md:text-4xl`}
+        className={`${borderClassNames} bg-white py-2 md:py-3 text-center text-2xl md:text-3xl lg:text-4xl`}
       >
         {project.title}
       </div>
