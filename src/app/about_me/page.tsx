@@ -1,4 +1,3 @@
-import Heading1 from '@/app/components/text/Heading1';
 import content from '@/app/about_me/content.json';
 import aboutMeImage from '@/app/assets/about_me/about_me.png';
 import Image from 'next/image';
