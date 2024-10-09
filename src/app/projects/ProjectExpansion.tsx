@@ -1,6 +1,6 @@
 import Heading3 from '@/app/components/text/Heading3';
 import { type Project } from '@/app/projects/projects';
-import styles from '@/app/projects/Project.module.css';
+import styles from '@/app/components/Link.module.css';
 
 type Props = {
   project: Project;
