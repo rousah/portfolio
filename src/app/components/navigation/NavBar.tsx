@@ -94,6 +94,12 @@ export default function NavBar(props: Props) {
         .nav-menu.open {
           height: auto;
         }
+
+        @media (min-width: 1024px) {
+          .nav-menu {
+            height: inherit !important;
+          }
+        }
       `}</style>
     </nav>
   );
