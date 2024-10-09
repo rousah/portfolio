@@ -4,7 +4,6 @@ import styles from '@/app/components/Link.module.css';
 export default function Contact() {
   const marginTopClassName = 'mt-8 md:mt-16';
 
-  // TODO: add real data
   return (
     <div
       className="bg-pink p-[24px] flex justify-between flex-col"
