@@ -6,6 +6,7 @@ import projects from '@/app/projects/projects';
 import ProjectExpansion from '@/app/projects/ProjectExpansion';
 
 // TODO: fix open projects on rfresh
+// TODO: fix all this. It sucks
 export default function ProjectsList() {
   const [expandedProjectId, setExpandedProjectId] = useState<string | null>(
     null
@@ -16,6 +17,17 @@ export default function ProjectsList() {
     setExpandedProjectId((previousId) =>
       previousId === projectId ? null : projectId
     );
+
+    if (expandedProjectId === projectId) {
+      return;
+    }
+
+    const closeBtn = document.getElementById(`close-${projectId}`);
+    if (closeBtn) {
+      setTimeout(() => {
+        closeBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 50);
+    }
   };
 
   return projects.map((project) => (
@@ -38,6 +50,7 @@ export default function ProjectsList() {
         <button
           className={`${borderClassNames} border-t-0 border-green w-full text-green flex justify-center p-1`}
           onClick={() => handleCardClick(project.id)}
+          id={`close-${project.id}`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +71,7 @@ export default function ProjectsList() {
       </div>
       <style jsx>{`
         .project-details {
-          transition: max-height 0.4s ease-in-out;
+          transition: max-height 0.3s ease-in-out;
           overflow: hidden;
           max-height: 0;
         }
