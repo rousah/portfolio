@@ -4,8 +4,8 @@
 }
 
 .loopSlide {
-  display: flex;
-  animation: slide infinite 20s linear;
+  display: inline-block;
+  animation: var(--text-loop-animation-duration) slide infinite linear;
 }
 
 @keyframes slide {

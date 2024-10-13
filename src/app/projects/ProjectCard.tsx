@@ -25,7 +25,7 @@ export default function ProjectCard(props: Props) {
           />
         </div>
         <div className="bg-pink overflow-hidden whitespace-nowrap">
-          {/* <TextLoop text={project.type}></TextLoop> */}
+          <TextLoop text={project.type}></TextLoop>
         </div>
       </div>
       <div
