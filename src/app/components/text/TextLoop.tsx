@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import classes from '@/app/components/text/TextLoop.module.css';
 
 type Props = {
   text: string;
@@ -20,15 +21,8 @@ export default function TextLoop(props: Props) {
   }, [text]);
 
   return (
-    <div
-      className="marquee"
-      style={{
-        animationDuration,
-        width: `${contentWidth}px`,
-      }}
-      ref={marqueeRef}
-    >
-      <div className="marquee-content">
+    <div className={classes.container}>
+      <div className={classes.loopSlide}>
         {Array(20)
           .fill(text)
           .map((type, index) => (
@@ -36,35 +30,7 @@ export default function TextLoop(props: Props) {
               {type}
             </span>
           ))}
-        {Array(20)
-          .fill(text)
-          .map((type, index) => (
-            <span key={index + 20} className="marquee-item pe-2">
-              {type}
-            </span>
-          ))}
       </div>
-      <style jsx>{`
-        .marquee {
-          display: flex;
-          white-space: nowrap;
-          animation: marquee linear infinite;
-        }
-        .marquee-content {
-          display: flex;
-        }
-        .marquee-item {
-          display: inline-block;
-        }
-        @keyframes marquee {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
     </div>
   );
 }
