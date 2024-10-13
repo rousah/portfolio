@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import AnimatedImage from '@/app/projects/AnimatedImage';
+import AnimatedImage from '@/app/home/AnimatedImage';
 import { StaticImageData } from 'next/image';
 import { Color } from '../types/colors';
 import Link from 'next/link';

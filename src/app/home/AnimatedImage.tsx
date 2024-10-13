@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import React, { useEffect, useState } from 'react';
-import '@/app/projects/AnimatedImage.css';
+import '@/app/home/AnimatedImage.css';
 
 interface AnimatedPhotoProps {
   src: StaticImageData;
