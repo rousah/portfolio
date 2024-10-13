@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import AnimatedImage from '@/app/projects/AnimatedImage';
+import { StaticImageData } from 'next/image';
 import { Color } from '../types/colors';
 import Link from 'next/link';
 
@@ -17,11 +20,7 @@ export default function Polaroid(props: Props) {
       <div
         className={`${borderClassNames} border-[24px] grow flex items-center`}
       >
-        <Image
-          src={props.image}
-          alt="placeholder"
-          style={{ width: '100%', height: 'auto' }}
-        />
+        <AnimatedImage src={props.image} />
       </div>
       <div
         className={`${borderClassNames} border-b-[24px] bg-${props.color} px-[24px] text-right text-2xl md:text-4xl`}
