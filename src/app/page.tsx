@@ -3,6 +3,7 @@ import DownloadCVButton from '@/app/home/DownloadCVButton';
 import Image from 'next/image';
 import PageLayout from '@/app/components/page/PageLayout';
 import grain from '@/app/assets/home/grain.webp';
+import FloatingClouds from '@/app/home/FloatingCloud';
 import { CSSProperties } from 'react';
 
 export default function Home() {
@@ -53,6 +54,7 @@ export default function Home() {
           <DownloadCVButton></DownloadCVButton>
         </div>
       </div>
+      <FloatingClouds></FloatingClouds>
     </PageLayout>
   );
 }
