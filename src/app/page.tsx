@@ -1,6 +1,8 @@
 import Sections from '@/app/home/Sections';
 import DownloadCVButton from '@/app/home/DownloadCVButton';
+import Image from 'next/image';
 import PageLayout from '@/app/components/page/PageLayout';
+import grain from '@/app/assets/home/grain.webp';
 import { CSSProperties } from 'react';
 
 export default function Home() {
@@ -26,12 +28,21 @@ export default function Home() {
 
   return (
     <PageLayout color="green">
-      <div className="pb-8 md:pb-14" style={style}>
+      <div className="pb-8 md:pb-14 relative" style={style}>
+        <Image
+          src={grain}
+          alt="grain"
+          style={{ width: '100%', height: '100%' }}
+          className="absolute pb-8 md:pb-14 top-0 opacity-35"
+          priority={true}
+        />
         <div
           style={shadowTexture}
           className="w-full h-full text-center pt-3 text-4xl"
         >
-          <span style={textStyle}>Welcome!</span>
+          <span style={textStyle} className="z-10 relative">
+            Welcome!
+          </span>
         </div>
       </div>
       <div className="min-h-dvh pb-5">
