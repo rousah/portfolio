@@ -2,9 +2,10 @@
 
 import Image from 'next/image';
 import cloud from '@/app/assets/cloud1.webp';
+import { CSSProperties } from 'react';
 
 export default function FloatingClouds() {
-  const cloudStyle1 = {
+  const cloudStyle1: CSSProperties = {
     position: 'absolute',
     top: '15%',
     marginLeft: '105%',
@@ -15,7 +16,7 @@ export default function FloatingClouds() {
     opacity: 1,
   };
 
-  const cloudStyle2 = {
+  const cloudStyle2: CSSProperties = {
     position: 'absolute',
     top: '30%',
     marginLeft: '-105%',
@@ -26,7 +27,7 @@ export default function FloatingClouds() {
     opacity: 0.89,
   };
 
-  const cloudStyle4 = {
+  const cloudStyle4: CSSProperties = {
     position: 'absolute',
     marginLeft: '105%',
     top: '55%',
@@ -37,7 +38,7 @@ export default function FloatingClouds() {
     opacity: 0.85,
   };
 
-  const cloudStyle3 = {
+  const cloudStyle3: CSSProperties = {
     position: 'absolute',
     marginLeft: '105%',
     top: '80%',
