@@ -4,7 +4,7 @@ import { StaticImageData } from 'next/image';
 const projectsWithImageStrings = content;
 const projects = projectsWithImageStrings.map((project) => {
   const image =
-    require(`@/app/assets/projects/${project.image_id}.png`).default;
+    require(`@/app/assets/projects/${project.image_id}.webp`).default;
 
   return {
     ...project,
