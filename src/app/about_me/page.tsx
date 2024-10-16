@@ -6,7 +6,7 @@ import PageLayout from '@/app/components/page/PageLayout';
 export default function AboutMe() {
   return (
     <PageLayout color="blue" noPaddingBottom>
-      <div className="text-black grid lg:grid-cols-2 lg:gap-x-28 lg:px-14 min-h-80-screen lg:items-center">
+      <div className="text-black grid lg:grid-cols-2 lg:gap-x-28 pt-3 lg:px-14 min-h-80-screen lg:items-center">
         <div className="whitespace-pre-wrap font-lora lg:col-start-2 flex flex-col">
           {content.description}
           <br />
