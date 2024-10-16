@@ -21,7 +21,7 @@ export default function DownloadCVButton() {
 
   return (
     <button
-      onClick={() => window.open('portfolio/cv/rosa_van_der_heide.pdf')}
+      onClick={() => window.open('cv/rosa_van_der_heide.pdf')}
       className="bg-yellow text-3xl text-black pt-5 pb-3 px-7"
     >
       <span style={textShadow}>{downloadCVText}</span>
