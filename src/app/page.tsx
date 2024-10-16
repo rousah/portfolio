@@ -29,6 +29,7 @@ export default function Home() {
 
   return (
     <PageLayout color="green">
+      <FloatingClouds></FloatingClouds>
       <div className="pb-8 md:pb-14 relative" style={style}>
         <Image
           src={grain}
@@ -39,7 +40,7 @@ export default function Home() {
         />
         <div
           style={shadowTexture}
-          className="w-full h-full text-center pt-3 text-4xl"
+          className="w-full h-full text-center pt-8 text-4xl lg:text-5xl"
         >
           <span style={textStyle} className="z-10 relative">
             Welcome!
@@ -54,7 +55,6 @@ export default function Home() {
           <DownloadCVButton></DownloadCVButton>
         </div>
       </div>
-      <FloatingClouds></FloatingClouds>
     </PageLayout>
   );
 }

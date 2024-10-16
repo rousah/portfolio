@@ -5,45 +5,48 @@ import cloud from '@/app/assets/cloud1.webp';
 import { CSSProperties } from 'react';
 
 export default function FloatingClouds() {
-  const cloudStyle1: CSSProperties = {
+  const commonStyle: CSSProperties = {
     position: 'absolute',
+    height: 'auto',
+    zIndex: 51,
+    pointerEvents: 'none',
+  };
+
+  const cloudStyle1: CSSProperties = {
+    ...commonStyle,
     top: '15%',
     marginLeft: '105%',
     width: '300px',
-    height: 'auto',
     animation: 'moveClouds 70s linear infinite',
     animationDelay: '4s',
     opacity: 1,
   };
 
   const cloudStyle2: CSSProperties = {
-    position: 'absolute',
+    ...commonStyle,
     top: '30%',
     marginLeft: '-105%',
     width: '250px',
-    height: 'auto',
     animation: 'moveCloudsOpposite 68s linear infinite',
     animationDelay: '200ms',
     opacity: 0.89,
   };
 
   const cloudStyle4: CSSProperties = {
-    position: 'absolute',
+    ...commonStyle,
     marginLeft: '105%',
     top: '55%',
     width: '234px',
-    height: 'auto',
     animation: 'moveClouds 80s linear infinite',
     animationDelay: '9s',
     opacity: 0.85,
   };
 
   const cloudStyle3: CSSProperties = {
-    position: 'absolute',
+    ...commonStyle,
     marginLeft: '105%',
     top: '80%',
     width: '200px',
-    height: 'auto',
     animation: 'moveClouds 89s linear infinite',
     opacity: 0.8,
   };
