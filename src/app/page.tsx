@@ -17,7 +17,7 @@ export default function Home() {
   };
 
   const style = {
-    height: '95dvh',
+    height: '95vh',
   };
 
   const textStyle: CSSProperties = {

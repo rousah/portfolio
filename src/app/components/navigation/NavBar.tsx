@@ -81,9 +81,11 @@ export default function NavBar(props: Props) {
           </Link>
         </div>
         <div className="mt-4 mb-2 lg:my-0">
-          <a href="portfolio/cv/cv.pdf" download="rosa_van_der_heide.pdf">
+          <button
+            onClick={() => window.open('portfolio/cv/rosa_van_der_heide.pdf')}
+          >
             Download CV
-          </a>
+          </button>
         </div>
       </div>
       <style jsx>{`
