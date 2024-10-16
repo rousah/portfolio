@@ -4,35 +4,47 @@ import Image from 'next/image';
 import cloud from '@/app/assets/cloud1.webp';
 
 export default function FloatingClouds() {
-  const cloudAnimation = {
-    animation: 'moveClouds 30s linear infinite',
-  };
-
   const cloudStyle1 = {
     position: 'absolute',
-    top: '20%',
-    left: '-10%',
+    top: '15%',
+    marginLeft: '105%',
     width: '300px',
     height: 'auto',
-    ...cloudAnimation,
+    animation: 'moveClouds 70s linear infinite',
+    animationDelay: '4s',
+    opacity: 1,
   };
 
   const cloudStyle2 = {
     position: 'absolute',
-    top: '50%',
-    right: '-10%',
+    top: '30%',
+    marginLeft: '-105%',
     width: '250px',
     height: 'auto',
-    ...cloudAnimation,
+    animation: 'moveCloudsOpposite 68s linear infinite',
+    animationDelay: '200ms',
+    opacity: 0.89,
+  };
+
+  const cloudStyle4 = {
+    position: 'absolute',
+    marginLeft: '105%',
+    top: '55%',
+    width: '234px',
+    height: 'auto',
+    animation: 'moveClouds 80s linear infinite',
+    animationDelay: '9s',
+    opacity: 0.85,
   };
 
   const cloudStyle3 = {
     position: 'absolute',
+    marginLeft: '105%',
     top: '80%',
-    left: '-10%',
     width: '200px',
     height: 'auto',
-    ...cloudAnimation,
+    animation: 'moveClouds 89s linear infinite',
+    opacity: 0.8,
   };
 
   return (
@@ -58,13 +70,28 @@ export default function FloatingClouds() {
         className="floating-cloud"
         priority={false}
       />
+      <Image
+        src={cloud}
+        alt="cloud"
+        style={cloudStyle4}
+        className="floating-cloud"
+        priority={false}
+      />
       <style jsx>{`
         @keyframes moveClouds {
           0% {
-            transform: translateX(0);
+            margin-left: 100%;
           }
           100% {
-            transform: translateX(130%);
+            margin-left: -30%;
+          }
+        }
+        @keyframes moveCloudsOpposite {
+          0% {
+            margin-left: -30%;
+          }
+          100% {
+            margin-left: 100%;
           }
         }
       `}</style>
