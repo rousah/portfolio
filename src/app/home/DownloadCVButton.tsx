@@ -2,6 +2,9 @@ import React from 'react';
 import resolveConfig from 'tailwindcss/resolveConfig';
 import tailwindConfig from '../../../tailwind.config';
 import { Colors } from '@/app/types/colors';
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
+
 const twFullConfig = resolveConfig(tailwindConfig);
 
 export default function DonwloadCVButton() {
@@ -14,11 +17,16 @@ export default function DonwloadCVButton() {
     textShadow: doubleShadow,
   };
 
-  // TODO: cv link
+  const { basePath } = publicRuntimeConfig;
+  const downloadLink = `${basePath}/cv/cv.pdf`;
 
   return (
-    <button className="bg-yellow text-3xl text-black pt-5 pb-3 px-7">
+    <a
+      className="bg-yellow text-3xl text-black pt-5 pb-3 px-7"
+      href={downloadLink}
+      download="rosa_van_der_heide.pdf"
+    >
       <span style={textShadow}>{downloadCVText}</span>
-    </button>
+    </a>
   );
 }

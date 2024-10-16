@@ -8,7 +8,7 @@ type Props = {
   color: Color;
 };
 
-// TODO: download CV link
+// TODO: change CV link
 
 export default function NavBar(props: Props) {
   const color = props.color;
@@ -81,7 +81,9 @@ export default function NavBar(props: Props) {
           </Link>
         </div>
         <div className="mt-4 mb-2 lg:my-0">
-          <a href="#">Download CV</a>
+          <a href="portfolio/cv/cv.pdf" download="rosa_van_der_heide.pdf">
+            Download CV
+          </a>
         </div>
       </div>
       <style jsx>{`
