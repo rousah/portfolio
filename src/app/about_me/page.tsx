@@ -1,5 +1,5 @@
 import content from '@/app/about_me/content.json';
-import aboutMeImage from '@/app/assets/about_me/about_me.png';
+import aboutMeImage from '@/app/assets/about_me/about_me.webp';
 import Image from 'next/image';
 import PageLayout from '@/app/components/page/PageLayout';
 
