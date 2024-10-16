@@ -4,7 +4,6 @@ import Image from 'next/image';
 import PageLayout from '@/app/components/page/PageLayout';
 
 export default function AboutMe() {
-  // TODO: improve description
   return (
     <PageLayout color="blue" noPaddingBottom>
       <div className="text-black grid lg:grid-cols-2 lg:gap-x-28 lg:px-14 min-h-80-screen lg:items-center">
